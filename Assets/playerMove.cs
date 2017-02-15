@@ -32,7 +32,7 @@ public class playerMove : MonoBehaviour {
 
 		AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo (0);
 
-		if ( currentState.IsName("player_atk") || currentState.IsName("player_atk2") || currentState.IsName("player_atk3")) {
+		if ( currentState.IsName("player_atk") || currentState.IsName("player_atk2") || currentState.IsName("player_atk3") ) {
 			oldAtk = 1;
 			oldAtk2 = 1;
 			oldAtk3 = 1;
