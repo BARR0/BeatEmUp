@@ -5,6 +5,8 @@ using UnityEngine;
 public class playerMove : MonoBehaviour {
 	public Animator anim;
 	public Transform sprite;
+    public string inputAxis;
+
 	private float speed;
 	public float DEFAULT_SPEED = 2;
 	private float speedMultiplier; //if we use a speedBoost item
@@ -24,11 +26,11 @@ public class playerMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float h = Input.GetAxis ("Horizontal");
-		float v = Input.GetAxis ("Vertical");
-		float atk = Input.GetAxis ("Fire1");
-		float atk2 = Input.GetAxis ("Fire2");
-		float atk3 = Input.GetAxis ("Fire3");
+		float h = Input.GetAxis ("Horizontal"+inputAxis);
+		float v = Input.GetAxis ("Vertical" + inputAxis);
+		float atk = Input.GetAxis ("Fire1" + inputAxis);
+		float atk2 = Input.GetAxis ("Fire2" + inputAxis);
+		float atk3 = Input.GetAxis ("Fire3" + inputAxis);
 
 		AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo (0);
 
@@ -52,12 +54,10 @@ public class playerMove : MonoBehaviour {
 			Debug.Log ("Attack");
 		}
 
-		/*
-			if (atk3== 1 && oldAtk3 == 0) {
-				anim.SetTrigger ("atk3");
-				Debug.Log ("Attack");
-			}
-		*/
+		if (atk3== 1 && oldAtk3 == 0) {
+			anim.SetTrigger ("atk3");
+			Debug.Log ("Attack");
+		}
 
 		if (h > 0) {
 			sprite.transform.rotation = Quaternion.Euler (0, 180, 0);
