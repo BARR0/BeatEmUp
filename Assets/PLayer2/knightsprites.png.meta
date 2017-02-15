@@ -1,0 +1,538 @@
+fileFormatVersion: 2
+guid: e4bcee82f43e6d04dbb8df8a1c55ea55
+timeCreated: 1486615458
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: knightsprites_0
+    21300002: knightsprites_1
+    21300004: knightsprites_2
+    21300006: knightsprites_3
+    21300008: knightsprites_4
+    21300010: knightsprites_5
+    21300012: knightsprites_6
+    21300014: knightsprites_7
+    21300016: knightsprites_8
+    21300018: knightsprites_9
+    21300020: knightsprites_10
+    21300022: knightsprites_11
+    21300024: knightsprites_12
+    21300026: knightsprites_13
+    21300028: knightsprites_14
+    21300030: knightsprites_15
+    21300032: knightsprites_16
+    21300034: knightsprites_17
+    21300036: knightsprites_18
+    21300038: knightsprites_19
+    21300040: knightsprites_20
+    21300042: knightsprites_21
+    21300044: knightsprites_22
+    21300046: knightsprites_23
+    21300048: knightsprites_24
+    21300050: knightsprites_25
+    21300052: knightsprites_26
+    21300054: knightsprites_28
+    21300056: knightsprites_27
+    21300058: knightsprites_29
+    21300060: knightsprites_30
+    21300062: knightsprites_31
+    21300064: knightsprites_32
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: knightsprites_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 409
+        width: 28
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 409
+        width: 39
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 409
+        width: 46
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 409
+        width: 43
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_4
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 409
+        width: 28
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 409
+        width: 36
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 409
+        width: 45
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_7
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 409
+        width: 36
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_8
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 509
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_9
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 509
+        width: 42
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_10
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 509
+        width: 54
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_11
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 509
+        width: 50
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 110
+        width: 46
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_13
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 110
+        width: 45
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_14
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 110
+        width: 44
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_15
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 110
+        width: 44
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_16
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 110
+        width: 44
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_17
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 110
+        width: 45
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_18
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 409
+        width: 40
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_19
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 409
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_21
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 133
+        width: 102
+        height: 86
+      alignment: 9
+      pivot: {x: 0.6656279, y: 0.49999982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_20
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 133
+        width: 85
+        height: 94
+      alignment: 9
+      pivot: {x: 0.6357738, y: 0.46816936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_22
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 129
+        width: 91
+        height: 86
+      alignment: 9
+      pivot: {x: 0.5928244, y: 0.5140317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_23
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 310
+        width: 58
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_24
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 310
+        width: 39
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_25
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 308
+        width: 38
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_26
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 224
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_27
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 218
+        width: 81
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5527698, y: 0.49465674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_28
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 15
+        width: 92
+        height: 88
+      alignment: 9
+      pivot: {x: 0.61129993, y: 0.4889184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_29
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 18
+        width: 92
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_30
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 10
+        width: 131
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_31
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 17
+        width: 147
+        height: 81
+      alignment: 9
+      pivot: {x: 0.77199423, y: 0.50000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: knightsprites_32
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 13
+        width: 170
+        height: 81
+      alignment: 9
+      pivot: {x: 0.79829603, y: 0.5060198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
