@@ -13,7 +13,7 @@ public class Proyectil : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		rb.AddRelativeForce (-force, 0, 0, ForceMode.Impulse);
+		rb.AddRelativeForce (-force, 0, 0, ForceMode.Acceleration);
 	}
 
 	void OnBecameInvisible() {
