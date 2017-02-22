@@ -22,6 +22,7 @@ public class playerMove : MonoBehaviour {
 		oldAtk3 = 0;
 		speedMultiplier = 1;
 		speed = DEFAULT_SPEED;
+
 	}
 	
 	// Update is called once per frame
