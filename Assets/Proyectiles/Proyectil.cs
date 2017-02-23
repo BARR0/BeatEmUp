@@ -8,12 +8,11 @@ public class Proyectil : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		rb = GetComponent<Rigidbody> ();
 	}
 
 	// Update is called once per frame
 	void Update () {
-		rb.AddRelativeForce (-force, 0, 0, ForceMode.Acceleration);
+        transform.Translate(-5*Time.deltaTime,0,0);
 	}
 
 	void OnBecameInvisible() {
