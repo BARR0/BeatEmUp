@@ -17,6 +17,6 @@ public class Fling : MonoBehaviour {
 	}
 
     void Flingable(){
-        Instantiate(shuriken, spot.transform.position, transform.rotation);
+        Instantiate(shuriken, spot.transform.position, spot.transform.rotation);
     }
 }

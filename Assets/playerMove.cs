@@ -32,7 +32,7 @@ public class playerMove : MonoBehaviour {
 		float atk = Input.GetAxis ("Fire1" + inputAxis);
 		float atk2 = Input.GetAxis ("Fire2" + inputAxis);
 		float atk3 = Input.GetAxis ("Fire3" + inputAxis);
-		Debug.Log (this.gameObject.name + ": " + atk + atk2 + atk3 + "");
+		//Debug.Log (this.gameObject.name + ": " + atk + atk2 + atk3 + "");
 
 		AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo (0);
 
@@ -66,8 +66,6 @@ public class playerMove : MonoBehaviour {
 			anim.SetTrigger ("atk3");
 			Debug.Log ("Attack");
 		}
-
-
 
 		anim.SetFloat ("walk", Mathf.Abs(h) + Mathf.Abs(v));
 		Vector3 v3 = new Vector3 (h, 0, v);

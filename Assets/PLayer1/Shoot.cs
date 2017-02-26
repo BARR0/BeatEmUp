@@ -21,6 +21,7 @@ public class Shoot : MonoBehaviour {
     void shootable()
     {
         Instantiate(bullet, spot.transform.position, transform.rotation);
-        Instantiate(bullet, spot2.transform.position, transform.rotation);
+        Instantiate(bullet, spot2.transform.position, spot2.transform.rotation);
     }
+
 }
