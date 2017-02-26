@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3ed36602121201045a587f2b616d966d
+timeCreated: 1488076492
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - stone: {fileID: 1473743076257984, guid: 603956a692e67334c855244859d04ea4, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
