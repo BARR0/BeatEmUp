@@ -12,7 +12,7 @@ public class Proyectil : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(-5*Time.deltaTime,0,0);
+        transform.Translate(-5*Time.deltaTime*force,0,0);
 	}
 
 	void OnBecameInvisible() {

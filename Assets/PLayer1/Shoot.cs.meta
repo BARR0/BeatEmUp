@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: 3ed36602121201045a587f2b616d966d
-timeCreated: 1488124612
+guid: ad9b4ccc494cd1e408bc0d5327e60ccf
+timeCreated: 1488127319
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences:
-  - stone: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

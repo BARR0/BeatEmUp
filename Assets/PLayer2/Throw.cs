@@ -16,7 +16,7 @@ public class Throw : MonoBehaviour {
        
 	}
 
-    void throwable(){
+    void Throwable(){
         Instantiate(stone, spot.transform.position, transform.rotation);
     }
 }
