@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerMove : MonoBehaviour {
+public class PlayerMove : MonoBehaviour {
 	public Animator anim;
 	public Transform sprite;
     public string inputAxis;
