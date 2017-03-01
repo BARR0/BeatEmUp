@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Castable : MonoBehaviour {
 	public GameObject magic;
+    public GameObject magic2;
 
 	private Transform spot;
 
@@ -20,4 +21,9 @@ public class Castable : MonoBehaviour {
 	void CastFire() {
 		Instantiate(magic, spot.transform.position, transform.rotation);
 	}
+
+    void CastWildFire()
+    {
+        Instantiate(magic2, spot.transform.position, transform.rotation);
+    }
 }
