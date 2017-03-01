@@ -1,0 +1,440 @@
+fileFormatVersion: 2
+guid: 30e68735abe0e794cb8af7cab6ee29d4
+timeCreated: 1487189064
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wizardF_0
+    21300002: wizardF_1
+    21300004: wizardF_2
+    21300006: wizardF_3
+    21300008: wizardF_4
+    21300010: wizardF_5
+    21300012: wizardF_6
+    21300014: wizardF_7
+    21300016: wizardF_8
+    21300018: wizardF_9
+    21300020: wizardF_10
+    21300022: wizardF_11
+    21300024: wizardF_12
+    21300026: wizardF_13
+    21300028: wizardF_14
+    21300030: wizardF_15
+    21300032: wizardF_16
+    21300034: wizardF_17
+    21300036: wizardF_18
+    21300038: wizardF_19
+    21300040: wizardF_20
+    21300042: wizardF_21
+    21300044: wizardF_22
+    21300046: wizardF_23
+    21300048: wizardF_24
+    21300050: wizardF_25
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wizardF_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 509
+        width: 29
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 510
+        width: 42
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 511
+        width: 45
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_3
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 511
+        width: 41
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_4
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 511
+        width: 31
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_5
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 512
+        width: 36
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_6
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 512
+        width: 41
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_7
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 511
+        width: 35
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_8
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 600
+        width: 54
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_9
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 599
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_10
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 600
+        width: 53
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_11
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 601
+        width: 54
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_12
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 598
+        width: 53
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_13
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 597
+        width: 51
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_14
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 403
+        width: 65
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5537354, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_15
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 403
+        width: 59
+        height: 94
+      alignment: 9
+      pivot: {x: 0.57893294, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_16
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 403
+        width: 58
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5658864, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_17
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 405
+        width: 47
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 406
+        width: 62
+        height: 93
+      alignment: 9
+      pivot: {x: 0.61992127, y: 0.49333832}
+      border: {x: 2, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_19
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 406
+        width: 65
+        height: 92
+      alignment: 9
+      pivot: {x: 0.61438644, y: 0.5067351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 112
+        width: 43
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_21
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 112
+        width: 40
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_22
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 112
+        width: 40
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_23
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 112
+        width: 42
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_24
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 120
+        width: 47
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_25
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 120
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

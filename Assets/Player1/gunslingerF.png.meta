@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: 00304d8484c88884685dca977bcec020
+timeCreated: 1487192791
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: gunslingerF_0
+    21300002: gunslingerF_1
+    21300004: gunslingerF_2
+    21300006: gunslingerF_3
+    21300008: gunslingerF_4
+    21300010: gunslingerF_5
+    21300012: gunslingerF_6
+    21300014: gunslingerF_7
+    21300016: gunslingerF_8
+    21300018: gunslingerF_9
+    21300020: gunslingerF_10
+    21300022: gunslingerF_11
+    21300024: gunslingerF_12
+    21300026: gunslingerF_13
+    21300028: gunslingerF_14
+    21300030: gunslingerF_15
+    21300032: gunslingerF_16
+    21300034: gunslingerF_17
+    21300036: gunslingerF_18
+    21300038: gunslingerF_19
+    21300040: gunslingerF_20
+    21300042: gunslingerF_21
+    21300044: gunslingerF_22
+    21300046: gunslingerF_23
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gunslingerF_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 603
+        width: 29
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 603
+        width: 37
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 604
+        width: 47
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5685405, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 603
+        width: 42
+        height: 95
+      alignment: 9
+      pivot: {x: 0.55113363, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_4
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 601
+        width: 34
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_5
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 602
+        width: 32
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_6
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 603
+        width: 38
+        height: 95
+      alignment: 9
+      pivot: {x: 0.58477384, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_7
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 603
+        width: 35
+        height: 94
+      alignment: 9
+      pivot: {x: 0.56136036, y: 0.49428865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_8
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 44
+        width: 46
+        height: 89
+      alignment: 9
+      pivot: {x: 0.45777428, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_9
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 43
+        width: 45
+        height: 90
+      alignment: 9
+      pivot: {x: 0.4568373, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_10
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 43
+        width: 45
+        height: 91
+      alignment: 9
+      pivot: {x: 0.46762696, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_11
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 42
+        width: 45
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_12
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 43
+        width: 50
+        height: 91
+      alignment: 9
+      pivot: {x: 0.44172972, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_13
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 43
+        width: 46
+        height: 90
+      alignment: 9
+      pivot: {x: 0.45777562, y: 0.49460465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_14
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 382
+        width: 65
+        height: 94
+      alignment: 9
+      pivot: {x: 0.65033215, y: 0.493503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_15
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 382
+        width: 67
+        height: 94
+      alignment: 9
+      pivot: {x: 0.6549596, y: 0.4805087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_16
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 379
+        width: 86
+        height: 94
+      alignment: 9
+      pivot: {x: 0.7272459, y: 0.480509}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_17
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 379
+        width: 91
+        height: 97
+      alignment: 9
+      pivot: {x: 0.7550277, y: 0.5000003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_18
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 377
+        width: 98
+        height: 95
+      alignment: 9
+      pivot: {x: 0.8178263, y: 0.48714277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_19
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 375
+        width: 74
+        height: 95
+      alignment: 9
+      pivot: {x: 0.71457815, y: 0.4935714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_20
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 203
+        width: 88
+        height: 92
+      alignment: 9
+      pivot: {x: 0.39013812, y: 0.49249384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_21
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 203
+        width: 55
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_22
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 203
+        width: 52
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_23
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 202
+        width: 57
+        height: 90
+      alignment: 9
+      pivot: {x: 0.43942422, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
