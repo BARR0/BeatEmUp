@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4f71bfcafce88e4479918a00e9dfaf98
-timeCreated: 1486604636
+timeCreated: 1488406917
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -134,7 +134,7 @@ TextureImporter:
         y: 1355
         width: 103
         height: 128
-      alignment: 7
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -551,7 +551,7 @@ TextureImporter:
         width: 131
         height: 203
       alignment: 9
-      pivot: {x: 0.27354884, y: 0.009742173}
+      pivot: {x: 0.2922681, y: 0.027599316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -564,7 +564,7 @@ TextureImporter:
         width: 134
         height: 201
       alignment: 9
-      pivot: {x: 0.33071548, y: 0.0375597}
+      pivot: {x: 0.30289185, y: 0.023892075}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -577,7 +577,7 @@ TextureImporter:
         width: 136
         height: 200
       alignment: 9
-      pivot: {x: 0.33320504, y: 0.055024415}
+      pivot: {x: 0.32344595, y: 0.03601715}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -590,7 +590,7 @@ TextureImporter:
         width: 168
         height: 150
       alignment: 9
-      pivot: {x: 0.5768022, y: 0.29596028}
+      pivot: {x: 0.54923975, y: 0.20175904}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -603,7 +603,7 @@ TextureImporter:
         width: 166
         height: 150
       alignment: 9
-      pivot: {x: 0.61095715, y: 0.27999634}
+      pivot: {x: 0.5714167, y: 0.19693156}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -616,7 +616,7 @@ TextureImporter:
         width: 163
         height: 152
       alignment: 9
-      pivot: {x: 0.53318477, y: 0.2541267}
+      pivot: {x: 0.54910296, y: 0.2158922}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
