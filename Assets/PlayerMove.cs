@@ -75,4 +75,8 @@ public class PlayerMove : MonoBehaviour {
 		oldAtk2 = atk2;
 		oldAtk3 = atk3;
 	}
+
+	void OnTriggerEnter(Collider c) {
+		
+	}
 }
