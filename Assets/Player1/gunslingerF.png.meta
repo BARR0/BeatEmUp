@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 00304d8484c88884685dca977bcec020
-timeCreated: 1487192791
+timeCreated: 1488839406
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -28,6 +28,9 @@ TextureImporter:
     21300042: gunslingerF_21
     21300044: gunslingerF_22
     21300046: gunslingerF_23
+    21300048: gunslingerF_24
+    21300050: gunslingerF_25
+    21300052: gunslingerF_26
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -402,6 +405,45 @@ TextureImporter:
         height: 90
       alignment: 9
       pivot: {x: 0.43942422, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_24
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 806
+        width: 58
+        height: 87
+      alignment: 9
+      pivot: {x: 0.47503874, y: 0.50554717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_25
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 806
+        width: 64
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gunslingerF_26
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 815
+        width: 68
+        height: 65
+      alignment: 9
+      pivot: {x: 0.7674381, y: 0.8387554}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

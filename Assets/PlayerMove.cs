@@ -15,6 +15,8 @@ public class PlayerMove : MonoBehaviour {
 	private float oldAtk2;
 	private float oldAtk3;
 
+	public int life;
+
 	// Use this for initialization
 	void Start () {
 		oldAtk = 0;
@@ -22,7 +24,6 @@ public class PlayerMove : MonoBehaviour {
 		oldAtk3 = 0;
 		speedMultiplier = 1;
 		speed = DEFAULT_SPEED;
-
 	}
 	
 	// Update is called once per frame
@@ -36,7 +37,7 @@ public class PlayerMove : MonoBehaviour {
 
 		AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo (0);
 
-		if ( currentState.IsName("player_atk") || currentState.IsName("player_atk2") || currentState.IsName("player_atk3") ) {
+		if ( currentState.IsName("player_atk") || currentState.IsName("player_atk2") || currentState.IsName("player_atk3") || currentState.IsName("player_hurt")) {
 			oldAtk = 1;
 			oldAtk2 = 1;
 			oldAtk3 = 1;
@@ -74,5 +75,18 @@ public class PlayerMove : MonoBehaviour {
 		oldAtk  = atk;
 		oldAtk2 = atk2;
 		oldAtk3 = atk3;
+	}
+
+	void OnTriggerEnter (Collider c) {
+		if (life > 0) {
+			life--;
+			if (c.gameObject.layer == 9) {
+				anim.SetTrigger ("hurt");
+			}
+		} else {
+			//CapsuleCollider playerCol = this.GetComponent<CapsuleCollider> ();
+			//playerCol.enabled = false;
+			anim.SetTrigger ("dead");
+		}
 	}
 }

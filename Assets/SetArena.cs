@@ -19,8 +19,8 @@ public class SetArena : MonoBehaviour {
 
 
 		if (c.gameObject.layer == 8) {
-			Vector3 arenaPos1 = new Vector3 (this.transform.position.x - 10, this.transform.position.y, this.transform.position.z);
-			Vector3 arenaPos2 = new Vector3 (this.transform.position.x + 10, this.transform.position.y, this.transform.position.z);
+			Vector3 arenaPos1 = new Vector3 (this.transform.position.x - 2.5f, this.transform.position.y, this.transform.position.z);
+			Vector3 arenaPos2 = new Vector3 (this.transform.position.x + 2.5f, this.transform.position.y, this.transform.position.z);
 			Instantiate ( arenaWall, arenaPos1, arenaWall.transform.rotation );
 			Instantiate ( arenaWall, arenaPos2, arenaWall.transform.rotation );
 			Destroy (this.gameObject);

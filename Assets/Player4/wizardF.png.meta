@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 30e68735abe0e794cb8af7cab6ee29d4
-timeCreated: 1487189064
+timeCreated: 1488839526
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -30,6 +30,10 @@ TextureImporter:
     21300046: wizardF_23
     21300048: wizardF_24
     21300050: wizardF_25
+    21300052: wizardF_26
+    21300054: wizardF_27
+    21300056: wizardF_28
+    21300058: wizardF_29
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -430,6 +434,58 @@ TextureImporter:
         height: 77
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_26
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 195
+        width: 44
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5564478, y: 0.5051102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_27
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 196
+        width: 47
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5880724, y: 0.50523955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_28
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 196
+        width: 51
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizardF_29
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 201
+        width: 73
+        height: 59
+      alignment: 9
+      pivot: {x: 0.85156584, y: 0.927971}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
