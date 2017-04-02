@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8f530734d32d70f4f84aed2c2371dc6c
+timeCreated: 1491159947
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - swordman: {fileID: 1508427337573322, guid: 0f2a4fc00460cf246a0bcdc4ac896861, type: 2}
+  - assassin: {fileID: 1811165492796796, guid: f13d8f76e040d8f459972f24f2cdb7a7, type: 2}
+  - gunslinger: {fileID: 1198490861872898, guid: 77605ea70f3633f43853e5d3457b51ab,
+      type: 2}
+  - wizard: {fileID: 1231041122899296, guid: 93d256f1319e8484b9c201744feb2514, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
