@@ -11,9 +11,19 @@ public class UILogic : MonoBehaviour {
 
 	void Start() {
 		p1 = "";
-		p2 = "";
-		p3 = "";
-		p4 = "";
+		p2 = "2";
+		p3 = "3";
+		p4 = "4";
+
+		GameController.gcReset ();
+		GameController.controllers.Add (swordman, p1);
+		GameController.controllers.Add (gunslinger, p2);
+		GameController.controllers.Add (assassin, p3); 
+		GameController.controllers.Add (wizard, p4);
+
+		SceneManager.LoadScene("testlevel", LoadSceneMode.Additive);
+		// Application.LoadLevel("testlevel");
+		print ("bye ");
 	}
 
 	public void SelectChar1() {
