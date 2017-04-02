@@ -5,10 +5,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour {
 
 	public static GameController instance;
-	public GameObject monster1;
-	public Vector3 spawnValues;
-	//Call for method of this class use in toher scripts
-	//GameController.instante.method()
+	public static List<PlayerMove> players;
 
 	void Awake () {
 		if (instance == null) {
@@ -16,9 +13,19 @@ public class GameController : MonoBehaviour {
 		} else if (instance != null) {
 			Destroy (gameObject);
 		}
+		players = new List<PlayerMove> (FindObjectsOfType (typeof(PlayerMove)) as PlayerMove[]);
+		foreach (PlayerMove pm in players)
+			print (pm);
 	}
 
-	public void spawnMonsters() {
-		
+	public static void addPlayer(PlayerMove pm){
+		if (!GameController.players.Contains (pm)) {
+			GameController.players.Add (pm);
+		}
+	}
+	public static void removePlayer(PlayerMove pm){
+		if (GameController.players.Contains (pm)) {
+			GameController.players.Remove (pm);
+		}
 	}
 }
