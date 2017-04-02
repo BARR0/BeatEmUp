@@ -5,9 +5,10 @@ using UnityEngine;
 public class GameController : MonoBehaviour {
 
 	public static Dictionary<GameObject, string> controllers;
+    public static List<PlayerMove> players;
 
-	private static GameController instance;
-	private static List<PlayerMove> players;
+    private static GameController instance;
+	
 
 	void Awake () {
 		if (instance == null) {
