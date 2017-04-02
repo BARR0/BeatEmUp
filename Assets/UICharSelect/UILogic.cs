@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class UILogic : MonoBehaviour {
 
-	public GameObject swordman, assassin, gunslinger, wizard;
+	public GameObject swordman, assassin, gunslinger, wizard, events;
 	private string p1, p2, p3, p4;
 
 	void Start() {
-		p1 = "";
+		p1 = "4";
 		p2 = "2";
 		p3 = "3";
-		p4 = "4";
+		p4 = "";
 
 		GameController.gcReset ();
 		GameController.controllers.Add (swordman, p1);
@@ -21,9 +21,7 @@ public class UILogic : MonoBehaviour {
 		GameController.controllers.Add (assassin, p3); 
 		GameController.controllers.Add (wizard, p4);
 
-		SceneManager.LoadScene("testlevel", LoadSceneMode.Additive);
-		// Application.LoadLevel("testlevel");
-		print ("bye ");
+		SceneManager.LoadScene("testlevel");
 	}
 
 	public void SelectChar1() {

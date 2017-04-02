@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 	public const float DEFAULT_SPEED = 2;
 
+	public GameObject prefab;
 	public Animator anim;
 	public Transform sprite;
     public string inputAxis;
@@ -26,7 +27,8 @@ public class PlayerController : MonoBehaviour {
         speedMultiplier = 1;
         speed = DEFAULT_SPEED;
         level = 1;
-		this.inputAxis = GameController.controllers [this.gameObject];
+		//this.inputAxis = GameController.controllers [this.prefab];
+		//print(this.prefab.name);
 		GameController.addPlayer (this);
 	}
 	
@@ -82,12 +84,11 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider c) {
-		if (life > 0) {
+		if (life > 0 && c.gameObject.layer == 11) {
 			life--;
-			if (c.gameObject.layer == 9) {
-				anim.SetTrigger ("hurt");
-			}
-		} else {
+			anim.SetTrigger ("hurt");
+		}
+		if (life <= 0) {
 			//CapsuleCollider playerCol = this.GetComponent<CapsuleCollider> ();
 			//playerCol.enabled = false;
 			anim.SetTrigger ("dead");
