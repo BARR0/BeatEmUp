@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour {
 
+	public static Dictionary<GameObject, string> controllers;
+
 	private static GameController instance;
 	private static List<PlayerMove> players;
 
@@ -13,6 +15,7 @@ public class GameController : MonoBehaviour {
 		} else {
 			Destroy (gameObject);
 		}
+		GameController.controllers = new Dictionary<GameObject, string>();
 		players = new List<PlayerMove> (FindObjectsOfType (typeof(PlayerMove)) as PlayerMove[]);
 //		foreach (PlayerMove pm in players)
 //			print (pm);
@@ -26,6 +29,13 @@ public class GameController : MonoBehaviour {
 	public static void removePlayer(PlayerMove pm){
 		if (GameController.players.Contains (pm)) {
 			GameController.players.Remove (pm);
+		}
+	}
+
+	public static void CreatePlayers(){
+		foreach(GameObject go in controllers.Keys){
+			GameObject clone = Instantiate(go);
+			// clone.GetComponent<PlayerMove>().inputAxis = controllers[go];
 		}
 	}
 }

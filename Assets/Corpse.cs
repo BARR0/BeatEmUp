@@ -12,5 +12,6 @@ public class Corpse : MonoBehaviour {
 
 	public void revive(){
 		Instantiate (player, this.transform.position, player.transform.rotation);
+
 	}
 }

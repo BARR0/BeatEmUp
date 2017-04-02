@@ -24,6 +24,7 @@ public class PlayerMove : MonoBehaviour {
 		oldAtk3 = 0;
 		speedMultiplier = 1;
 		speed = DEFAULT_SPEED;
+		this.inputAxis = GameController.controllers [this.gameObject];
 		GameController.addPlayer (this);
 	}
 	
