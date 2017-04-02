@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour {
 
-	public static GameController instance;
-	public static List<PlayerMove> players;
+	private static GameController instance;
+	private static List<PlayerMove> players;
 
 	void Awake () {
 		if (instance == null) {
 			instance = this;
-		} else if (instance != null) {
+		} else {
 			Destroy (gameObject);
 		}
 		players = new List<PlayerMove> (FindObjectsOfType (typeof(PlayerMove)) as PlayerMove[]);
-		foreach (PlayerMove pm in players)
-			print (pm);
+//		foreach (PlayerMove pm in players)
+//			print (pm);
 	}
 
 	public static void addPlayer(PlayerMove pm){

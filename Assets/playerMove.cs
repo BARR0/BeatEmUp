@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour {
+	public const float DEFAULT_SPEED = 2;
+
 	public Animator anim;
 	public Transform sprite;
     public string inputAxis;
+	public int life;
 
 	private float speed;
-	public float DEFAULT_SPEED = 2;
 	private float speedMultiplier; //if we use a speedBoost item
 
 	private float oldAtk;
 	private float oldAtk2;
 	private float oldAtk3;
-
-	public int life;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +24,7 @@ public class PlayerMove : MonoBehaviour {
 		oldAtk3 = 0;
 		speedMultiplier = 1;
 		speed = DEFAULT_SPEED;
+		GameController.addPlayer (this);
 	}
 	
 	// Update is called once per frame
