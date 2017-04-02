@@ -6,7 +6,7 @@ public class GameController : MonoBehaviour {
 
     public static Dictionary<GameObject, string> controllers;
 
-	private static List<PlayerMove> players;
+	public static List<PlayerMove> players;
 
 	public static void gcReset() {
 		GameController.controllers = new Dictionary<GameObject, string>();
