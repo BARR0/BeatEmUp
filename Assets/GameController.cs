@@ -6,15 +6,9 @@ public class GameController : MonoBehaviour {
 
 	public static Dictionary<GameObject, string> controllers;
 
-	private static GameController instance;
 	private static List<PlayerMove> players;
 
-	void Awake () {
-		if (instance == null) {
-			instance = this;
-		} else {
-			Destroy (gameObject);
-		}
+	public static void gcReset() {
 		GameController.controllers = new Dictionary<GameObject, string>();
 		players = new List<PlayerMove> (FindObjectsOfType (typeof(PlayerMove)) as PlayerMove[]);
 //		foreach (PlayerMove pm in players)
