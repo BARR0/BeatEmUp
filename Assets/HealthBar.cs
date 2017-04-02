@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour {
     public string number;
 
-    private PlayerMove player;
+    private PlayerController player;
     private Slider slider;
     private Text text;
 	// Use this for initialization
@@ -17,8 +17,8 @@ public class HealthBar : MonoBehaviour {
         Transform textTransform = transform.GetChild(1);
         text = textTransform.GetComponent<Text>();
 
-        List<PlayerMove> players = GameController.players;
-        foreach(PlayerMove pm in players)
+        List<PlayerController> players = GameController.players;
+        foreach(PlayerController pm in players)
         {
             if(pm.inputAxis == number)
             {
@@ -32,7 +32,7 @@ public class HealthBar : MonoBehaviour {
 
         slider.maxValue = player.life;
         slider.minValue = 0;
-        text.text = "Player " + player.inputAxis;
+        text.text = "Player " + player.inputAxis + " Level " + player.Level;
 		
 	}
 	
