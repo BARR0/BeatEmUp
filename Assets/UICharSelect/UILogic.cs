@@ -146,7 +146,9 @@ public class UILogic : MonoBehaviour {
 
 		string p = "";
 
-		GameController.controllers.Add (swordman, p);
+        GameController.gcReset();
+
+        GameController.controllers.Add (swordman, p);
 
 		GameController.controllers.Add (gunslinger, p);
 
@@ -154,9 +156,6 @@ public class UILogic : MonoBehaviour {
 
 		GameController.controllers.Add (wizard, p);
 
-
-
-		GameController.gcReset ();
-
+        SceneManager.LoadScene("testlevel");
 	}
 }
