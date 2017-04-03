@@ -21,12 +21,12 @@ public class PlayerController : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        oldAtk = 0;
-        oldAtk2 = 0;
-        oldAtk3 = 0;
-        speedMultiplier = 1;
-        speed = DEFAULT_SPEED;
-        level = 1;
+        this.oldAtk = 0;
+        this.oldAtk2 = 0;
+        this.oldAtk3 = 0;
+        this.speedMultiplier = 1;
+        this.speed = DEFAULT_SPEED;
+        this.level = 1;
 		//this.inputAxis = GameController.controllers [this.prefab];
 		//print(this.prefab.name);
 		GameController.addPlayer (this);
