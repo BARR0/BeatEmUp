@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: 25e352ecf3a7a1e4f8b9f16a770110b8
+timeCreated: 1491239007
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Baphomet_Idle1
+    21300002: Baphomet_Idle2
+    21300004: Baphomet_Idle3
+    21300006: Baphomet_Idle4
+    21300008: Baphomet_Idle5
+    21300010: Baphomet_Idle6
+    21300012: Baphomet_Idle7
+    21300014: Baphomet_Idle8
+    21300016: Baphomet_Move1
+    21300018: Baphomet_Move2
+    21300020: Baphomet_Move3
+    21300022: Baphomet_Move4
+    21300024: Baphomet_Attk1
+    21300026: Baphomet_Attk2
+    21300028: Baphomet_Attk3
+    21300030: Baphomet_Attk4
+    21300032: Baphomet_Dead1
+    21300034: Baphomet_Dead2
+    21300036: Baphomet_Dead3
+    21300038: Baphomet_Pow1
+    21300040: Baphomet_Pow3
+    21300042: Baphomet_Pow4
+    21300044: Baphomet_Pow5
+    21300046: Baphomet_Pow2
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Baphomet_Idle1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1120
+        width: 83
+        height: 117
+      alignment: 9
+      pivot: {x: 0.7069747, y: 0.08704552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Idle2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1119
+        width: 88
+        height: 116
+      alignment: 9
+      pivot: {x: 0.7049113, y: 0.08783801}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Idle3
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1119
+        width: 91
+        height: 115
+      alignment: 9
+      pivot: {x: 0.6891312, y: 0.093589716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Idle4
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1121
+        width: 95
+        height: 111
+      alignment: 9
+      pivot: {x: 0.7090852, y: 0.11792432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Idle5
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1124
+        width: 93
+        height: 105
+      alignment: 9
+      pivot: {x: 0.69389457, y: 0.12375372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Idle6
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1124
+        width: 89
+        height: 106
+      alignment: 9
+      pivot: {x: 0.7128296, y: 0.11282291}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Idle7
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1121
+        width: 85
+        height: 109
+      alignment: 9
+      pivot: {x: 0.73212963, y: 0.13072051}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Idle8
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 1119
+        width: 84
+        height: 113
+      alignment: 9
+      pivot: {x: 0.6879156, y: 0.1018855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Move1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 808
+        width: 87
+        height: 118
+      alignment: 9
+      pivot: {x: 0.69241685, y: 0.10986639}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Move2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 812
+        width: 95
+        height: 109
+      alignment: 9
+      pivot: {x: 0.6982399, y: 0.08405269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Move3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 812
+        width: 87
+        height: 109
+      alignment: 9
+      pivot: {x: 0.7004342, y: 0.06485517}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Move4
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 810
+        width: 82
+        height: 120
+      alignment: 9
+      pivot: {x: 0.5680501, y: 0.06986796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Attk1
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 807
+        width: 82
+        height: 117
+      alignment: 9
+      pivot: {x: 0.6360998, y: 0.11249353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Attk2
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 809
+        width: 90
+        height: 113
+      alignment: 9
+      pivot: {x: 0.5387505, y: 0.111121796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Attk3
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 822
+        width: 71
+        height: 97
+      alignment: 9
+      pivot: {x: 0.56876856, y: 0.11888516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Attk4
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 822
+        width: 71
+        height: 97
+      alignment: 9
+      pivot: {x: 0.5392955, y: 0.14764845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Dead1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 315
+        width: 83
+        height: 118
+      alignment: 9
+      pivot: {x: 0.70168996, y: 0.09213308}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Dead2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 315
+        width: 134
+        height: 118
+      alignment: 9
+      pivot: {x: 0.567669, y: 0.103955284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Dead3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 322
+        width: 129
+        height: 133
+      alignment: 9
+      pivot: {x: 0.5216282, y: 0.3741331}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Pow1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 138
+        width: 81
+        height: 117
+      alignment: 9
+      pivot: {x: 0.6659049, y: 0.111672945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Pow3
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 137
+        width: 81
+        height: 117
+      alignment: 9
+      pivot: {x: 0.6659049, y: 0.11167334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Pow4
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 139
+        width: 75
+        height: 117
+      alignment: 9
+      pivot: {x: 0.64504844, y: 0.10073448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Pow5
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 137
+        width: 81
+        height: 117
+      alignment: 9
+      pivot: {x: 0.65800494, y: 0.09526519}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Baphomet_Pow2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 138
+        width: 80
+        height: 118
+      alignment: 9
+      pivot: {x: 0.6599798, y: 0.087849505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
