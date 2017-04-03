@@ -17,22 +17,22 @@ public class HealthBar : MonoBehaviour {
         Transform textTransform = transform.GetChild(1);
         text = textTransform.GetComponent<Text>();
 
-        List<PlayerController> players = GameController.players;
-        foreach (PlayerController pm in players) {
-            Debug.Log(pm.inputAxis);
-            if (pm.inputAxis == number)
+        foreach (PlayerController pc in GameController.players) {
+            Debug.Log("Input Axis " + pc.inputAxis);
+            if (pc.inputAxis.Equals(number))
             {
-                player = pm;
+                player = pc;
             }
         }
         if (player == null)
         {
-            Destroy(gameObject);
             Debug.Log(gameObject.name + " was destroyed");
+            Destroy(gameObject);
+            return;
         }
-
+        Debug.Log("---------------" + player.gameObject.name);
         slider.maxValue = player.life;
-        Debug.Log(player.inputAxis + " " + player.life + " " + player.Level);
+        //Debug.Log(player.inputAxis + " " + player.life + " " + player.Level);
         slider.minValue = 0;
         text.text = "Player " + player.inputAxis + " Level " + player.Level;
 	}
