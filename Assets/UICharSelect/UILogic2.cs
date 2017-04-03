@@ -58,10 +58,13 @@ public class UILogic2 : MonoBehaviour {
 
 		for(int i = 0; i < n; ++i){
 			if (p [i] == n)
+				//print ("a");
 				continue;
 			if (GameController.controllers.ContainsKey (prefabs [p [i]]))
+				//print ("b");
 				return;
 			if (p [i] < n)
+				//print ("c");
 				GameController.controllers.Add (prefabs [p [i]], p [i] == 0 ? "" : (p [i] + 1).ToString ());
 		}
 
