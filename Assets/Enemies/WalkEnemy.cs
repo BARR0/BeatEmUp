@@ -20,13 +20,13 @@ public class WalkEnemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Transform closest = p1;
-		if(Vector3.Distance(this.transform.position, p2.position) < Vector3.Distance(this.transform.position, closest.position)){
+		if(Vector3.Distance(this.transform.position, p2.position) < Vector3.Distance(this.transform.position, closest.position)) {
 			closest = p2;
 		}
-		if(Vector3.Distance(this.transform.position, p3.position) < Vector3.Distance(this.transform.position, closest.position)){
+		if(Vector3.Distance(this.transform.position, p3.position) < Vector3.Distance(this.transform.position, closest.position)) {
 			closest = p3;
 		}
-		if(Vector3.Distance(this.transform.position, p3.position) < Vector3.Distance(this.transform.position, closest.position)){
+		if(Vector3.Distance(this.transform.position, p3.position) < Vector3.Distance(this.transform.position, closest.position)) {
 			closest = p4;
 		}
 		AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo (0);

@@ -148,14 +148,14 @@ public class UILogic : MonoBehaviour {
 
         GameController.gcReset();
 
-        GameController.controllers.Add (swordman, p);
+        GameController.controllers.Add (swordman, "");
 
-		GameController.controllers.Add (gunslinger, p);
+		GameController.controllers.Add (gunslinger, "2");
 
-		GameController.controllers.Add (assassin, p);
+		GameController.controllers.Add (assassin, "3");
 
-		GameController.controllers.Add (wizard, p);
+		GameController.controllers.Add (wizard, "4");
 
-        SceneManager.LoadScene("testlevel");
+        SceneManager.LoadScene("developScene");
 	}
 }
