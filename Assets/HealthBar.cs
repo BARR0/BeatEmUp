@@ -9,8 +9,8 @@ public class HealthBar : MonoBehaviour {
     private PlayerController player;
     private Slider slider;
     private Text text;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
         Transform sliderTransform = transform.GetChild(0);
         slider = sliderTransform.GetComponent<Slider>();
 
@@ -18,22 +18,23 @@ public class HealthBar : MonoBehaviour {
         text = textTransform.GetComponent<Text>();
 
         List<PlayerController> players = GameController.players;
-        foreach(PlayerController pm in players)
-        {
-            if(pm.inputAxis == number)
+        foreach (PlayerController pm in players) {
+            Debug.Log(pm.inputAxis);
+            if (pm.inputAxis == number)
             {
-                player = pm; 
+                player = pm;
             }
         }
-        if(player == null)
+        if (player == null)
         {
             Destroy(gameObject);
+            Debug.Log(gameObject.name + " was destroyed");
         }
 
         slider.maxValue = player.life;
+        Debug.Log(player.inputAxis + " " + player.life + " " + player.Level);
         slider.minValue = 0;
         text.text = "Player " + player.inputAxis + " Level " + player.Level;
-		
 	}
 	
 	// Update is called once per frame
