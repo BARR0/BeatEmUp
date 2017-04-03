@@ -9,7 +9,7 @@ public class TestLevel : MonoBehaviour {
 		foreach (GameObject go in GameController.controllers.Keys) {
 			GameObject tmp = Instantiate (go);
 			PlayerController pm = tmp.GetComponent<PlayerController> ();
-			GameController.addPlayer (pm);
+			//GameController.addPlayer (pm);
 			pm.inputAxis = GameController.controllers[go];
 		}
 		// GameController.CreatePlayers();

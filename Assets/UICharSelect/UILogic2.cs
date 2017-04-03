@@ -65,7 +65,7 @@ public class UILogic2 : MonoBehaviour {
 				return;
 			if (p [i] < n)
 				//print ("c");
-				GameController.controllers.Add (prefabs [p [i]], p [i] == 0 ? "" : (p [i] + 1).ToString ());
+				GameController.controllers.Add (prefabs [p [i]], i == 0 ? "" : (i + 1).ToString ());
 		}
 
 		if (GameController.controllers.Count > 0) SceneManager.LoadScene("testlevel");
