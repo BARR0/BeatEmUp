@@ -21,7 +21,6 @@ public class miniBossController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        life = 100;
 		midclose = new Symbol ("midclose");
 		close = new Symbol("close");
 		far = new Symbol ("far");
@@ -42,6 +41,7 @@ public class miniBossController : MonoBehaviour {
 		spawn.AddNeighbor (time, attack);
 
 		//wait.AddNeighbor (midclose, walk);
+		wait.AddNeighbor (far, attack);
 		wait.AddNeighbor (close, attack);
 		wait.AddNeighbor (low, spawn);
 
@@ -50,6 +50,7 @@ public class miniBossController : MonoBehaviour {
 		currentBehavior = (MonoBehaviour)gameObject.AddComponent (current.Behavior);
 		StartCoroutine (CheckSymbols());
 		timecounter =  StartCoroutine (CountTime ());
+		dead = false;
 	}
 
 	IEnumerator CheckSymbols() {
@@ -58,6 +59,8 @@ public class miniBossController : MonoBehaviour {
 
 		while (true) {
 
+			float curretnDist = Vector3.Distance (FindClosest ().position, transform.position);
+			print (curretnDist);
 
 			State temp = null;
 
@@ -65,17 +68,19 @@ public class miniBossController : MonoBehaviour {
 				temp = current.ApplySymbol (low);
                 //continue;
 			}
-            else if(Vector3.Distance(FindClosest().position, transform.position) < 6)
+			else if(curretnDist < 6)
             {
+				print ("Baphomet has seen a player");
                 temp = current.ApplySymbol(far);
-                if(Vector3.Distance(FindClosest().position, transform.position) < 3)
+				if(curretnDist < 4)
                 {
                     temp = current.ApplySymbol(midclose);
-                }else if(Vector3.Distance(FindClosest().position, transform.position) < 1)
+				}else if(curretnDist < 2)
                 {
                     temp = current.ApplySymbol(close);
                 }
             }
+
 			if (temp != null && temp != current) {
 				StopCoroutine (timecounter);
 				timecounter = StartCoroutine (CountTime ());
@@ -111,6 +116,7 @@ public class miniBossController : MonoBehaviour {
 	{
 		if (life < 1 && !dead)
 		{
+			Destroy (currentBehavior);
 			dead = true;
 			GameController.addExp (this.XP);
 			anim.SetTrigger("dead");

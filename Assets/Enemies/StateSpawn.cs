@@ -26,21 +26,31 @@ public class StateSpawn : MonoBehaviour {
 
 		AnimatorStateInfo currentState = parent.anim.GetCurrentAnimatorStateInfo(0);
 
+
+
 		Vector3 movement = (spawns[currentSpawn] - this.transform.position).normalized * Time.deltaTime * defaultSpeed;
 
-		if (movement.x > 0) {
-			enemySprite.transform.rotation = Quaternion.Euler (0, 180, 0);
-		}
-		if (movement.x < 0) {
+		if (currentState.IsName ("atk2")) {
 			enemySprite.transform.rotation = Quaternion.Euler (0, 0, 0);
+		} else {
+
+			if (movement.x > 0) {
+				enemySprite.transform.rotation = Quaternion.Euler (0, 180, 0);
+			}
+			if (movement.x < 0) {
+				enemySprite.transform.rotation = Quaternion.Euler (0, 0, 0);
+			}
+
 		}
 
-		if ( 0.5f < Mathf.Abs (Vector3.Distance (this.transform.position, spawns[currentSpawn])) ) {
-
+		if ( 0.8f < Mathf.Abs (Vector3.Distance (this.transform.position, spawns[currentSpawn])) ) {
+			
 			parent.anim.SetBool ("moving", true);
 			this.transform.Translate (movement);
 
 		} else if( !currentState.IsName("pow") ){
+			
+			enemySprite.transform.rotation = Quaternion.Euler (0, 0, 0);
 
 			parent.anim.SetBool ("moving", false);
 			parent.anim.SetTrigger ("pow");

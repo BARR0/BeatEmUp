@@ -16,7 +16,7 @@ public class StateAttack : MonoBehaviour {
 		enemySprite = transform.GetChild (0);
 		target = parent.FindClosest ();
 		defaultSpeed = 2;
-		atkDist = 0.5f;
+		atkDist = 1.0f;
 	}
 	
 	// Update is called once per frame
