@@ -10,14 +10,14 @@ public class SetArena : MonoBehaviour {
 
 	private GameObject wall1, wall2;
 	private bool isActive;
-	private int enemysToKill;
+	public int enemysToKill;
 
 	// Use this for initialization
 	void Start () {
 		isActive = false;
 		wall1 = null;
 		wall2 = null;
-		enemysToKill = 6;
+		//enemysToKill = 5;
 
 	}
 
