@@ -31,7 +31,7 @@ public class Castable : MonoBehaviour {
         Instantiate(magic2, spot.transform.position, transform.rotation);
     }
 
-	void helPassive(){
+	void healPassive(){
 		if (flag) {
 			StartCoroutine (heal ());
 			flag = false;
