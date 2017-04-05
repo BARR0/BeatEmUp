@@ -105,6 +105,6 @@ public class PlayerController : MonoBehaviour {
         get { return this.level; }
     }
 	public void gainLevel(){
-		this.life++;
+		this.level++;
 	}
 }

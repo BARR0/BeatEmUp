@@ -36,8 +36,8 @@ public class GameController : MonoBehaviour {
 			// clone.GetComponent<PlayerMove>().inputAxis = controllers[go];
 		}
 	}
-	public static void addExp(double exp){
-		GameController.exp += exp;
+	public static void addExp(double moreexp){
+		GameController.exp += moreexp;
 		if (GameController.exp >= 1.0) {
 			GameController.exp = 0.0;
 			foreach (PlayerController pc in GameController.players) {
