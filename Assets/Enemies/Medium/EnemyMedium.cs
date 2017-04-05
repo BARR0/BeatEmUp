@@ -69,7 +69,7 @@ public class EnemyMedium : MonoBehaviour {
         }
         else if (c.gameObject.layer == 9 && !dead)
         {
-            anim.SetTrigger("hurt");
+            //anim.SetTrigger("hurt");
             life--;
         }
 
