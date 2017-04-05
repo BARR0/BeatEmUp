@@ -5,10 +5,15 @@ using UnityEngine;
 public class miniBossController : MonoBehaviour {
 
 	public float life;
+	public GameObject minion;
+	public Animator anim;
+	public float defaultSpeed;
+	public double attackDistance;
 
 	private State current;
 	private Symbol clode, far, low, time;
 	private MonoBehaviour currentBehavior;
+	private bool dead;
 
 	// Use this for initialization
 	void Start () {
@@ -68,5 +73,25 @@ public class miniBossController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	Transform FindCosest() {
+
+		GameObject dummy = GameController.players [0].gameObject;
+		float mindist = Vector3.Distance (this.gameObject.transform.position, dummy.transform.position);
+
+		foreach (PlayerController go in GameController.players) {
+
+			float distDummy = Vector3.Distance (this.gameObject.transform.position, go.gameObject.transform.position);
+			//Iterates through players to find the shortest one
+			if ( distDummy < mindist) {
+
+				mindist = distDummy;
+				dummy = go.gameObject;
+			}
+
+		}
+
+		return dummy.transform;
 	}
 }
