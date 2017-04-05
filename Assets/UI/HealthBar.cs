@@ -22,9 +22,8 @@ public class HealthBar : MonoBehaviour {
         text = textTransform.GetComponent<Text>();
 
         foreach (PlayerController pc in GameController.players) {   
-            if (pc.inputAxis == number  || pc.inputAxis == "")
+            if (pc.inputAxis == number)
             {
-                Debug.Log("Input Axis " + pc.inputAxis + " pcName: " + pc.gameObject.name);
                 player = pc;
                 break;
             }
@@ -35,15 +34,15 @@ public class HealthBar : MonoBehaviour {
             Destroy(gameObject);
             return;
         }
-        Debug.Log("---------------" + player.gameObject.name);
         slider.maxValue = player.life;
         //Debug.Log(player.inputAxis + " " + player.life + " " + player.Level);
         slider.minValue = 0;
-        text.text = "Player " + player.inputAxis + " Level " + player.Level;
+        text.text = "Player " + player.inputAxis + " Level " + (player.Level);
 	}
 	
 	// Update is called once per frame
 	void Update () {
         slider.value = player.life;
-	}
+        text.text = "Player " + player.inputAxis + " Level " + (player.Level);
+    }
 }
