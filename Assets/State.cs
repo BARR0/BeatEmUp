@@ -3,47 +3,45 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class State{
-    private string name;
+public class State {
 
-    //Monobehaviours
-    //list of behaviours
-    private System.Type behaviour;
+	private string name;
 
-    //transition
-    private Dictionary<Symbol, State> transitions;
+	// Monobehaiviors
+	// List of behavoiors
+	private Type behavior;
 
-    public string Name{
-        get { return name; }
-    }
+	// transitions
+	private Dictionary<Symbol, State> transitions;
 
-    public Dictionary<Symbol, State> Transitions{
-        get { return transitions; }
-    }
+	public string Name {
+		get { return name; }
+	}
 
-    public Type Behaviour
-    {
-        get { return behaviour; }
-    }
+	public Dictionary<Symbol, State> Transitions {
+		get { return transitions; }
+	}
 
-    public State (string name, Type behaviour)
-    {
-        this.name = name;
-        this.behaviour = behaviour;
-        this.transitions = new Dictionary<Symbol, State>();
-    }
+	public Type Behavior {
+		get { return behavior; }
+	}
 
-    public State(string name){
-        this.name = name;
-    }
+	public State(string name, Type behavior) {
+		this.name = name;
+		this.behavior = behavior;
+		transitions = new Dictionary<Symbol, State> ();
+	}
 
-    public void AddTransition(Symbol key, State state){
-        transitions.Add(key, state);
-    }
+	public void AddNeighbor( Symbol key, State neighbor) {
 
-    public State ApplySymbol(Symbol symbol){
-        if (transitions.ContainsKey(symbol))
-            return this;
-        return transitions[symbol];
-    }
+		transitions.Add (key, neighbor);
+	}
+
+	public State ApplySymbol(Symbol symbol) {
+
+		if (!transitions.ContainsKey(symbol)) 
+			return this;
+
+		return transitions[symbol];
+	}
 }

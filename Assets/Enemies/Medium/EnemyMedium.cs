@@ -11,6 +11,7 @@ public class EnemyMedium : MonoBehaviour {
 
 	private Transform enemySprite;
 	private Transform target;
+	private bool dead;
 
 	void Start () {
 		enemySprite = transform.GetChild (0);
@@ -39,13 +40,18 @@ public class EnemyMedium : MonoBehaviour {
 			anim.SetBool ("moving", true);
 			this.transform.Translate (movement);
 
-		} else if( !currentState.IsName("attack") ){
+		} else if( !currentState.IsName("attack") && !currentState.IsName ("dead")){
 
 			anim.SetBool ("moving", false);
 			anim.SetTrigger ("atk");
 		}
 
-		print (this.gameObject.name + " : " + target.gameObject.name);
+		if (life < 1 && !dead) {
+
+			dead = true;
+			anim.SetTrigger ("dead");
+		}
+
 	}
 
 	IEnumerator FindClosestTarget() {

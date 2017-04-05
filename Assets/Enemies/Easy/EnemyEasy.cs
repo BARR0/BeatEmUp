@@ -11,12 +11,15 @@ public class EnemyEasy : MonoBehaviour {
 
 	private Transform enemySprite;
 	private Transform target;
+	private bool dead;
 
 	void Start () {
 		enemySprite = transform.GetChild (0);
 
 		//Init first target
 		target = GameController.players [0].gameObject.transform;
+		Physics.IgnoreLayerCollision ( 10, 12);
+		dead = false;
 		StartCoroutine ( FindClosestTarget() );
 	}
 
@@ -34,18 +37,24 @@ public class EnemyEasy : MonoBehaviour {
 			enemySprite.transform.rotation = Quaternion.Euler (0, 0, 0);
 		}
 
-		if ( attackDistance < Mathf.Abs (Vector3.Distance (this.transform.position, target.position)) ) {
+		if ( attackDistance < Mathf.Abs (Vector3.Distance (this.transform.position, target.position)) && !currentState.IsName ("dead") ) {
 
 			anim.SetBool ("moving", true);
 			this.transform.Translate (movement);
 
-		} else if( !currentState.IsName("attack") ){
+		} else if( !currentState.IsName("attack") && !currentState.IsName ("dead")){
 			
 			anim.SetBool ("moving", false);
 			anim.SetTrigger ("atk");
 		}
 
-		print (target.gameObject.name);
+		if (life < 1 && !dead) {
+
+			dead = true;
+			anim.SetTrigger ("dead");
+		}
+			
+
 	}
 
 	IEnumerator FindClosestTarget() {
@@ -70,6 +79,14 @@ public class EnemyEasy : MonoBehaviour {
 			target = dummy.transform;
 
 			yield return new WaitForSeconds (1);
+		}
+	}
+
+	void OnTriggerEnter(Collider co) {
+		
+		if ( co.gameObject.layer == 9) {
+			
+			life--;
 		}
 	}
 
