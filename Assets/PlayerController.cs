@@ -37,6 +37,9 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (this.life <= 0)
+			Destroy (this.gameObject);
+
 		float h = Input.GetAxis ("Horizontal"+inputAxis);
 		float v = Input.GetAxis ("Vertical" + inputAxis);
 		float atk = Input.GetAxis ("Fire1" + inputAxis);
@@ -101,4 +104,7 @@ public class PlayerController : MonoBehaviour {
     public int Level{
         get { return this.level; }
     }
+	public void gainLevel(){
+		this.life++;
+	}
 }
