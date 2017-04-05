@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour {
 	private float oldAtk2;
 	private float oldAtk3;
 
+	void Awake(){
+		GameController.addPlayer (this);
+	}
+
     // Use this for initialization
     void Start() {
         this.oldAtk = 0;
@@ -29,7 +33,6 @@ public class PlayerController : MonoBehaviour {
         this.level = 1;
 		//this.inputAxis = GameController.controllers [this.prefab];
 		//print(this.prefab.name);
-		GameController.addPlayer (this);
 	}
 	
 	// Update is called once per frame
