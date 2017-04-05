@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class miniBossController : MonoBehaviour {
 
@@ -120,8 +121,9 @@ public class miniBossController : MonoBehaviour {
 			dead = true;
 			GameController.addExp (this.XP);
 			anim.SetTrigger("dead");
-			//Destroy(this);
-		}
+            SceneManager.LoadScene("Game Over");
+            //Destroy(this);
+        }
 		else if(c.gameObject.layer == 9 && !dead)
 		{
 			anim.SetTrigger("hurt");
