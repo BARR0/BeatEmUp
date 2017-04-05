@@ -5,15 +5,17 @@ using UnityEngine;
 public class miniBossController : MonoBehaviour {
 
 	public float life;
-    public float xp;
+    public float XP;
+	public Vector3[] spawns;
 	//public GameObject minion;
-	//public Animator anim;
+	public Animator anim;
 	//public float defaultSpeed;
 	//public double attackDistance;
 
 	private State current;
 	private Symbol close, far, low, time,midclose;
 	private MonoBehaviour currentBehavior;
+	private Coroutine timecounter;
 
 	private bool dead;
 
@@ -26,23 +28,20 @@ public class miniBossController : MonoBehaviour {
 		low = new Symbol ("low");
 		time = new Symbol ("time");
 
-		State walk = new State ("walk", typeof(StateWalk));
 		State attack = new State ("attack", typeof(StateAttack));
 		State spawn = new State ("spawn", typeof(StateSpawn));
+
 		State wait = new State ("wait", typeof(StateWait));
 
-		walk.AddNeighbor (close, attack);
-		walk.AddNeighbor (low, spawn);
-
-		attack.AddNeighbor (far, walk);
+		//attack.AddNeighbor (far, walk);
 		attack.AddNeighbor (low, spawn);
 		attack.AddNeighbor (time, spawn);
-		attack.AddNeighbor (midclose, walk);
+		//attack.AddNeighbor (midclose, walk);
 
 		spawn.AddNeighbor (close, attack);
-		spawn.AddNeighbor (time, walk);
+		spawn.AddNeighbor (time, attack);
 
-		wait.AddNeighbor (midclose, walk);
+		//wait.AddNeighbor (midclose, walk);
 		wait.AddNeighbor (close, attack);
 		wait.AddNeighbor (low, spawn);
 
@@ -50,12 +49,16 @@ public class miniBossController : MonoBehaviour {
 
 		currentBehavior = (MonoBehaviour)gameObject.AddComponent (current.Behavior);
 		StartCoroutine (CheckSymbols());
+		timecounter =  StartCoroutine (CountTime ());
 	}
 
 	IEnumerator CheckSymbols() {
 
+
+
 		while (true) {
-			
+
+
 			State temp = null;
 
 			if (life < 30) {
@@ -74,7 +77,8 @@ public class miniBossController : MonoBehaviour {
                 }
             }
 			if (temp != null && temp != current) {
-
+				StopCoroutine (timecounter);
+				timecounter = StartCoroutine (CountTime ());
 				current = temp;
 				Destroy (currentBehavior);
 				currentBehavior = (MonoBehaviour)gameObject.AddComponent (current.Behavior);
@@ -84,12 +88,43 @@ public class miniBossController : MonoBehaviour {
 		}
 	}
 
+	IEnumerator CountTime() {
+		
+		while (true) {
+			
+
+
+			yield return new WaitForSeconds (6);
+			State temp = current.ApplySymbol (time);
+			current = temp;
+			Destroy (currentBehavior);
+			currentBehavior = (MonoBehaviour)gameObject.AddComponent (current.Behavior);
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
 		
 	}
 
-	Transform FindClosest() {
+	void OnTriggerEnter(Collider c)
+	{
+		if (life < 1 && !dead)
+		{
+			dead = true;
+			GameController.addExp (this.XP);
+			anim.SetTrigger("dead");
+			//Destroy(this);
+		}
+		else if(c.gameObject.layer == 9 && !dead)
+		{
+			anim.SetTrigger("hurt");
+			life--;
+		}
+
+	}
+
+	public Transform FindClosest() {
 
 		GameObject dummy = GameController.players [0].gameObject;
 		float mindist = Vector3.Distance (this.gameObject.transform.position, dummy.transform.position);
