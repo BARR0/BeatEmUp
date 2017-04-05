@@ -9,7 +9,7 @@ public class BaphometController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Symbol halfHealth = new Symbol("halfHealth");
-        Symbol 
+        //Symbol 
 	}
 	
 	// Update is called once per frame

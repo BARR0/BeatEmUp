@@ -80,7 +80,7 @@ public class EnemyMedium : MonoBehaviour {
     IEnumerator FindClosestTarget() {
 
 		while (true) {
-
+			if(GameController.players.Count <= 0) break;
 			PlayerController dummy = GameController.players [0];
 			float mindist = dummy.life;
 

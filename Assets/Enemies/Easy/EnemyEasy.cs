@@ -73,7 +73,7 @@ public class EnemyEasy : MonoBehaviour {
 	IEnumerator FindClosestTarget() {
 
 		while (true) {
-
+			if(GameController.players.Count <= 0) break;
 			GameObject dummy = GameController.players [0].gameObject;
 			float mindist = Vector3.Distance (this.gameObject.transform.position, dummy.transform.position);
 
