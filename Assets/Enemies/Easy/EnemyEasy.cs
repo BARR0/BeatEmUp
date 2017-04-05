@@ -30,7 +30,8 @@ public class EnemyEasy : MonoBehaviour {
 
         AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo(0);
         Debug.Log(life);
-
+		if (target == null)
+			return;
         Vector3 movement = (target.position - this.transform.position).normalized * Time.deltaTime * defaultSpeed;
 
 		if (movement.x > 0) {

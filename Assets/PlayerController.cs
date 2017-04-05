@@ -37,8 +37,10 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (this.life <= 0)
+		if (this.life <= 0) {
+			GameController.removePlayer (this);
 			Destroy (this.gameObject);
+		}
 
 		float h = Input.GetAxis ("Horizontal"+inputAxis);
 		float v = Input.GetAxis ("Vertical" + inputAxis);
