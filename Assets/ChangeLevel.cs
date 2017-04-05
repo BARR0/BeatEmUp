@@ -17,12 +17,12 @@ public class ChangeLevel : MonoBehaviour {
 		
 	}
 	void OnTriggerEnter(Collider c) {
-		print ("~~~~~~~~~~~~~~~~~~~~~~~~hi1");
+		//print ("~~~~~~~~~~~~~~~~~~~~~~~~hi1");
 		if (c.gameObject.layer == 8) {
 			foreach(PlayerController pc in GameController.players){
 				DontDestroyOnLoad (pc.gameObject);
 			}
-			print ("~~~~~~~~~~~~~~~~~~~~~~~~hi2");
+			//print ("~~~~~~~~~~~~~~~~~~~~~~~~hi2");
 			SceneManager.LoadScene (nextscene);
 		}
 	}
