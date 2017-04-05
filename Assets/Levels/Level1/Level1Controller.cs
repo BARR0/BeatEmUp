@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level1Controller : MonoBehaviour
 {
@@ -22,6 +23,12 @@ public class Level1Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+		if (GameController.players.Count <= 0) {
+			StartCoroutine (end ());
+		}
     }
+	IEnumerator end(){
+		yield return new WaitForSeconds (5f);
+		SceneManager.LoadScene ("Game Over");
+	}
 }

@@ -7,10 +7,14 @@ public class Castable : MonoBehaviour {
     public GameObject magic2;
 
 	private Transform spot;
+	private PlayerController par;
+	private bool flag;
 
 	// Use this for initialization
 	void Start () {
 		spot = transform.GetChild(0);
+		par = this.transform.parent.GetComponent<PlayerController> ();
+		flag = true;
 	}
 	
 	// Update is called once per frame
@@ -26,4 +30,18 @@ public class Castable : MonoBehaviour {
     {
         Instantiate(magic2, spot.transform.position, transform.rotation);
     }
+
+	void helPassive(){
+		if (flag) {
+			StartCoroutine (heal ());
+			flag = false;
+		}
+	}
+
+	IEnumerator heal(){
+		while (true) {
+			par.life++;
+			yield return new WaitForSeconds(1f);
+		}
+	}
 }
