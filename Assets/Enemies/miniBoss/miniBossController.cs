@@ -59,7 +59,10 @@ public class miniBossController : MonoBehaviour {
 
 		while (true) {
 
-			float curretnDist = Vector3.Distance (FindClosest ().position, transform.position);
+			Transform tmp = FindClosest ();
+			if (tmp == null)
+				break;
+			float curretnDist = Vector3.Distance (tmp.position, transform.position);
 			print (curretnDist);
 
 			State temp = null;
@@ -131,7 +134,8 @@ public class miniBossController : MonoBehaviour {
 	}
 
 	public Transform FindClosest() {
-
+		if (GameController.players.Count <= 0)
+			return null;
 		GameObject dummy = GameController.players [0].gameObject;
 		float mindist = Vector3.Distance (this.gameObject.transform.position, dummy.transform.position);
 
@@ -146,7 +150,8 @@ public class miniBossController : MonoBehaviour {
 			}
 
 		}
-
+		if (dummy == null)
+			return null;
 		return dummy.transform;
 	}
 }

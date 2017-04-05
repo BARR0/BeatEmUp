@@ -19,7 +19,7 @@ public class EnemyEasy : MonoBehaviour {
         life = 10;
 
 		//Init first target
-		target = GameController.players [0].gameObject.transform;
+		if(GameController.players.Count > 0) target = GameController.players [0].gameObject.transform;
 		Physics.IgnoreLayerCollision ( 10, 12);
 		dead = false;
 		StartCoroutine ( FindClosestTarget() );
