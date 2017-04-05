@@ -102,5 +102,4 @@ public class EnemyMedium : MonoBehaviour {
 			yield return new WaitForSeconds (1);
 		}
 	}
-		
 }
