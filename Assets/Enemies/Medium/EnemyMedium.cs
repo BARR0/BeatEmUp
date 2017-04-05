@@ -32,7 +32,8 @@ public class EnemyMedium : MonoBehaviour {
 
         AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo(0);
         Debug.Log(life);
-
+		if (target == null)
+			return;
         Vector3 movement = (target.position - this.transform.position).normalized * Time.deltaTime * defaultSpeed;
 
         if (movement.x > 0)
@@ -79,7 +80,7 @@ public class EnemyMedium : MonoBehaviour {
     IEnumerator FindClosestTarget() {
 
 		while (true) {
-
+			if(GameController.players.Count <= 0) break;
 			PlayerController dummy = GameController.players [0];
 			float mindist = dummy.life;
 

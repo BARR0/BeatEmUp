@@ -18,6 +18,8 @@ public class Delimiter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (GameController.players.Count <= 0)
+			return;
 		float maxx = GameController.players[0].transform.position.x, minx = GameController.players[0].transform.position.x;
 		foreach(PlayerController pm in GameController.players){
 			minx = pm.transform.position.x < minx ? pm.transform.position.x : minx;

@@ -30,7 +30,8 @@ public class EnemyEasy : MonoBehaviour {
 
         AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo(0);
         Debug.Log(life);
-
+		if (target == null)
+			return;
         Vector3 movement = (target.position - this.transform.position).normalized * Time.deltaTime * defaultSpeed;
 
 		if (movement.x > 0) {
@@ -72,7 +73,7 @@ public class EnemyEasy : MonoBehaviour {
 	IEnumerator FindClosestTarget() {
 
 		while (true) {
-
+			if(GameController.players.Count <= 0) break;
 			GameObject dummy = GameController.players [0].gameObject;
 			float mindist = Vector3.Distance (this.gameObject.transform.position, dummy.transform.position);
 

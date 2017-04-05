@@ -15,6 +15,8 @@ public class MoveCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (GameController.players.Count <= 0)
+			return;
 //		float maxx = Mathf.Max (p1.position.x, p2.position.x, p3.position.x, p4.position.x),
 //		      minx = Mathf.Min (p1.position.x, p2.position.x, p3.position.x, p4.position.x);
 		float maxx = GameController.players[0].transform.position.x, minx = GameController.players[0].transform.position.x;
