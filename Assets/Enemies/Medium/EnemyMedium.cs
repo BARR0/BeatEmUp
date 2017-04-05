@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMedium : MonoBehaviour {
 
     public int life;
-    public int XP; //Asignar experiencia-------000000000000000----------------
+    public double XP; //Asignar experiencia-------000000000000000----------------
     public Animator anim;
     public float defaultSpeed;
     public double attackDistance;
@@ -64,6 +64,7 @@ public class EnemyMedium : MonoBehaviour {
         if (life < 1 && !dead)
         {
             dead = true;
+			GameController.addExp (this.XP);
             anim.SetTrigger("dead");
             //Destroy(this);
         }

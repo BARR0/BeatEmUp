@@ -8,11 +8,14 @@ public class GameController : MonoBehaviour {
 
 	public static List<PlayerController> players;
 
+	private static double exp;
+
 	public static void gcReset() {
 		GameController.controllers = new Dictionary<GameObject, string>();
 		players = new List<PlayerController> (FindObjectsOfType (typeof(PlayerController)) as PlayerController[]);
 //		foreach (PlayerMove pm in players)
 //			print (pm);
+		GameController.exp = 0.0;
 	}
 
 	public static void addPlayer(PlayerController pm){
@@ -31,6 +34,15 @@ public class GameController : MonoBehaviour {
 			print (go.name);
 			GameObject clone = Instantiate(go);
 			// clone.GetComponent<PlayerMove>().inputAxis = controllers[go];
+		}
+	}
+	public static void addExp(double exp){
+		GameController.exp += exp;
+		if (GameController.exp >= 1.0) {
+			GameController.exp = 0.0;
+			foreach (PlayerController pc in GameController.players) {
+				pc.gainLevel ();
+			}
 		}
 	}
 }
