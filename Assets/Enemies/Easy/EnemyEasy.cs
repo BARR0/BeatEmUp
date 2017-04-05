@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyEasy : MonoBehaviour {
 
 	public int life;
+    public int XP; //Asignar experiencia-------000000000000000----------------
 	public Animator anim;
 	public float defaultSpeed;
 	public double attackDistance;
@@ -15,6 +16,7 @@ public class EnemyEasy : MonoBehaviour {
 
 	void Start () {
 		enemySprite = transform.GetChild (0);
+        life = 10;
 
 		//Init first target
 		target = GameController.players [0].gameObject.transform;
@@ -23,12 +25,13 @@ public class EnemyEasy : MonoBehaviour {
 		StartCoroutine ( FindClosestTarget() );
 	}
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update() {
 
-		AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo (0);
+        AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo(0);
+        Debug.Log(life);
 
-		Vector3 movement = (target.position - this.transform.position).normalized * Time.deltaTime * defaultSpeed;
+        Vector3 movement = (target.position - this.transform.position).normalized * Time.deltaTime * defaultSpeed;
 
 		if (movement.x > 0) {
 			enemySprite.transform.rotation = Quaternion.Euler (0, 180, 0);
@@ -37,25 +40,33 @@ public class EnemyEasy : MonoBehaviour {
 			enemySprite.transform.rotation = Quaternion.Euler (0, 0, 0);
 		}
 
-		if ( attackDistance < Mathf.Abs (Vector3.Distance (this.transform.position, target.position)) && !currentState.IsName ("dead") ) {
+		if ( attackDistance < Mathf.Abs (Vector3.Distance (this.transform.position, target.position)) && !dead ) {
 
 			anim.SetBool ("moving", true);
 			this.transform.Translate (movement);
 
-		} else if( !currentState.IsName("attack") && !currentState.IsName ("dead")){
+		} else if( !currentState.IsName("atk")  && !dead){
 			
 			anim.SetBool ("moving", false);
 			anim.SetTrigger ("atk");
-		}
-
-		if (life < 1 && !dead) {
-
-			dead = true;
-			anim.SetTrigger ("dead");
-		}
-			
-
+		}	
 	}
+
+    void OnTriggerEnter(Collider c)
+    {
+        if (life < 1 && !dead)
+        {
+            dead = true;
+            anim.SetTrigger("dead");
+            //Destroy(this);
+        }
+        else if(c.gameObject.layer == 9 && !dead)
+        {
+            anim.SetTrigger("hurt");
+            life--;
+        }
+        
+    }
 
 	IEnumerator FindClosestTarget() {
 
@@ -81,13 +92,4 @@ public class EnemyEasy : MonoBehaviour {
 			yield return new WaitForSeconds (1);
 		}
 	}
-
-	void OnTriggerEnter(Collider co) {
-		
-		if ( co.gameObject.layer == 9) {
-			
-			life--;
-		}
-	}
-
 }

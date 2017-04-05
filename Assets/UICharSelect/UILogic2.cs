@@ -68,6 +68,6 @@ public class UILogic2 : MonoBehaviour {
 				GameController.controllers.Add (prefabs [p [i]], i == 0 ? "" : (i + 1).ToString ());
 		}
 
-		if (GameController.controllers.Count > 0) SceneManager.LoadScene("testlevel");
+		if (GameController.controllers.Count > 0) SceneManager.LoadScene("Level1Scene");
 	}
 }

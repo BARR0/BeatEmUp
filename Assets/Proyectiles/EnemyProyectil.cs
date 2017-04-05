@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Proyectil : MonoBehaviour {
+public class EnemyProyectil : MonoBehaviour {
 	private Rigidbody rb;
 	public float force;
 
@@ -22,7 +22,7 @@ public class Proyectil : MonoBehaviour {
 
     void OnTriggerEnter(Collider c)
     {
-        if(c.gameObject.layer == 10)
+        if(c.gameObject.layer == 8)
         {
             Destroy(this.gameObject);
         }
