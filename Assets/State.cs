@@ -33,7 +33,7 @@ public class State{
         this.transitions = new Dictionary<Symbol, State>();
     }
 
-    public State(string Name){
+    public State(string name){
         this.name = name;
     }
 
