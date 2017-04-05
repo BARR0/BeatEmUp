@@ -5,23 +5,26 @@ using UnityEngine;
 public class miniBossController : MonoBehaviour {
 
 	public float life;
-	public GameObject minion;
-	public Animator anim;
-	public float defaultSpeed;
-	public double attackDistance;
+    public float xp;
+	//public GameObject minion;
+	//public Animator anim;
+	//public float defaultSpeed;
+	//public double attackDistance;
 
 	private State current;
-	private Symbol clode, far, low, time;
+	private Symbol close, far, low, time,midclose;
 	private MonoBehaviour currentBehavior;
+
 	private bool dead;
 
 	// Use this for initialization
 	void Start () {
-		Symbol midclose = new Symbol ("midclose");
-		Symbol close = new Symbol("close");
-		Symbol far = new Symbol ("far");
-		Symbol low = new Symbol ("low");
-		Symbol time = new Symbol ("time");
+        life = 100;
+		midclose = new Symbol ("midclose");
+		close = new Symbol("close");
+		far = new Symbol ("far");
+		low = new Symbol ("low");
+		time = new Symbol ("time");
 
 		State walk = new State ("walk", typeof(StateWalk));
 		State attack = new State ("attack", typeof(StateAttack));
@@ -57,8 +60,19 @@ public class miniBossController : MonoBehaviour {
 
 			if (life < 30) {
 				temp = current.ApplySymbol (low);
+                //continue;
 			}
-
+            else if(Vector3.Distance(FindClosest().position, transform.position) < 6)
+            {
+                temp = current.ApplySymbol(far);
+                if(Vector3.Distance(FindClosest().position, transform.position) < 3)
+                {
+                    temp = current.ApplySymbol(midclose);
+                }else if(Vector3.Distance(FindClosest().position, transform.position) < 1)
+                {
+                    temp = current.ApplySymbol(close);
+                }
+            }
 			if (temp != null && temp != current) {
 
 				current = temp;
@@ -75,7 +89,7 @@ public class miniBossController : MonoBehaviour {
 		
 	}
 
-	Transform FindCosest() {
+	Transform FindClosest() {
 
 		GameObject dummy = GameController.players [0].gameObject;
 		float mindist = Vector3.Distance (this.gameObject.transform.position, dummy.transform.position);
