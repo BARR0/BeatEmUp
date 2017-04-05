@@ -60,7 +60,7 @@ public class EnemyEasy : MonoBehaviour {
             anim.SetTrigger("dead");
             //Destroy(this);
         }
-        else if(c.gameObject.layer == 9)
+        else if(c.gameObject.layer == 9 && !dead)
         {
             anim.SetTrigger("hurt");
             life--;
