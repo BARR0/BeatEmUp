@@ -14,12 +14,12 @@ public class UILogic2 : MonoBehaviour {
 
 	private int[] p;
 	//Save previous input of the joystick
-	private int[] h, oldh;
+	private float[] h, oldh;
 
 	void Start() {
 		p = new int[n];
-		oldh = new int[n];
-		h = new int[n];
+		oldh = new float[n];
+		h = new float[n];
 
 		for(int i = 0; i < draw.Length; ++i){
 			draw [i].overrideSprite = unselected [i % 4];
@@ -34,17 +34,19 @@ public class UILogic2 : MonoBehaviour {
 	void Update () {
 
 		//Get controller axis
-		h[0] = (int)Input.GetAxis ("Horizontal");
-		h[1] = (int)Input.GetAxis ("Horizontal2");
-		h[2] = (int)Input.GetAxis ("Horizontal3");
-		h[3] = (int)Input.GetAxis ("Horizontal4");
+		h[0] = Input.GetAxis ("Horizontal");
+		h[1] = Input.GetAxis ("Horizontal2");
+		h[2] = Input.GetAxis ("Horizontal3");
+		h[3] = Input.GetAxis ("Horizontal4");
+
+		print (Mathf.Ceil( h [0] ));
 
 		for(int i = 0; i < n; ++i){
-			if ((h [i] == 1) && (oldh [i] <= 0) && (p[i] < n )) {
+			if (( Mathf.Ceil( h [i] ) == 1 ) && (oldh [i] <= 0) && (p[i] < n )) {
 				draw [n * i + p [i]].overrideSprite = unselected [p [i]];
 				p [i]++;
 				if(p[i] < n) draw [n * i + p [i]].overrideSprite = selected [p [i]];
-			} else if ((h [i] == -1) && (oldh [i] >= 0) && (p[i] > 0)) {
+			} else if (( Mathf.Floor( h [i] ) == -1 ) && (oldh [i] >= 0) && (p[i] > 0)) {
 				if(p[i] < n) draw [n * i + p [i]].overrideSprite = unselected [p [i]];
 				p [i]--;
 				draw [n * i + p [i]].overrideSprite = selected [p [i]];

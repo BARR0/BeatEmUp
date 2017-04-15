@@ -16,7 +16,7 @@ public class EnemyEasy : MonoBehaviour {
 
 	void Start () {
 		enemySprite = transform.GetChild (0);
-        life = 10;
+        //life = 10;
 
 		//Init first target
 		if(GameController.players.Count > 0) target = GameController.players [0].gameObject.transform;
@@ -64,8 +64,8 @@ public class EnemyEasy : MonoBehaviour {
         }
         else if(c.gameObject.layer == 9 && !dead)
         {
+			life--;
             anim.SetTrigger("hurt");
-            life--;
         }
         
     }
