@@ -60,7 +60,7 @@ public class EnemyEasy : MonoBehaviour {
             dead = true;
 			GameController.addExp (this.XP);
             anim.SetTrigger("dead");
-            //Destroy(this);
+			StartCoroutine ( WhenNotDestroyed () );
         }
         else if(c.gameObject.layer == 9 && !dead)
         {
@@ -92,6 +92,15 @@ public class EnemyEasy : MonoBehaviour {
 			target = dummy.transform;
 
 			yield return new WaitForSeconds (1);
+		}
+	}
+
+	IEnumerator WhenNotDestroyed() {
+
+		while (true) {
+
+			yield return new WaitForSeconds (2);
+			Destroy(this.gameObject);
 		}
 	}
 }
