@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuLogic : MonoBehaviour {
 
@@ -11,11 +12,16 @@ public class MenuLogic : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+		if (Input.GetAxis ("Fire1") != 0) {
+
+			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+		}
+
 	}
 
 	public void Startgame() {
 
-		print ("hola");
+		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }
