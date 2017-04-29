@@ -10,10 +10,12 @@ public class PlayerController : MonoBehaviour {
 	public Transform sprite;
     public string inputAxis;
 	public int life;
+    public AudioClip hurt;
 
 	private float speed;
 	private float speedMultiplier; //if we use a speedBoost item
     private int level;
+    private AudioSource source;
 
 	private float oldAtk;
 	private float oldAtk2;
@@ -21,7 +23,8 @@ public class PlayerController : MonoBehaviour {
 
 	void Awake(){
 		GameController.addPlayer (this);
-	}
+        source = GetComponent<AudioSource>();
+    }
 
     // Use this for initialization
     void Start() {
@@ -94,7 +97,8 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter (Collider c) {
 		if (life > 0 && c.gameObject.layer == 11) {
 			life--;
-			anim.SetTrigger ("hurt");
+            source.PlayOneShot(hurt, 1);
+            anim.SetTrigger ("hurt");
 		}
 		if (life <= 0) {
 			//CapsuleCollider playerCol = this.GetComponent<CapsuleCollider> ();
