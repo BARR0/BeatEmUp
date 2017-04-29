@@ -41,12 +41,13 @@ public class EnemyEasy : MonoBehaviour {
 			enemySprite.transform.rotation = Quaternion.Euler (0, 0, 0);
 		}
 
-		if ( attackDistance < Mathf.Abs (Vector3.Distance (this.transform.position, target.position)) && !dead ) {
+		if (!currentState.IsName("atk")  && attackDistance < Mathf.Abs (Vector3.Distance (this.transform.position, target.position)) && !dead ) {
 
 			anim.SetBool ("moving", true);
 			this.transform.Translate (movement);
 
-		} else if( !currentState.IsName("atk")  && !dead){
+		}
+		if( !currentState.IsName("atk") && attackDistance >= Mathf.Abs (Vector3.Distance (this.transform.position, target.position)) && !dead){
 			
 			anim.SetBool ("moving", false);
 			anim.SetTrigger ("atk");
@@ -55,7 +56,7 @@ public class EnemyEasy : MonoBehaviour {
 
     void OnTriggerEnter(Collider c)
     {
-        if (life < 1 && !dead)
+		if (c.gameObject.layer == 9 && life < 2 && !dead)
         {
             dead = true;
 			GameController.addExp (this.XP);
@@ -96,11 +97,8 @@ public class EnemyEasy : MonoBehaviour {
 	}
 
 	IEnumerator WhenNotDestroyed() {
-
-		while (true) {
-
-			yield return new WaitForSeconds (2);
-			Destroy(this.gameObject);
-		}
+		
+		yield return new WaitForSeconds (2);
+		Destroy(this.gameObject);
 	}
 }
