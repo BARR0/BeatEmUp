@@ -18,6 +18,9 @@ public class miniBossController : MonoBehaviour {
 	private MonoBehaviour currentBehavior;
 	private Coroutine timecounter;
 
+	public Camera contlvl;
+	private bool musicOn;
+
 	private bool dead;
 
 	// Use this for initialization
@@ -52,11 +55,10 @@ public class miniBossController : MonoBehaviour {
 		StartCoroutine (CheckSymbols());
 		timecounter =  StartCoroutine (CountTime ());
 		dead = false;
+		musicOn = false;
 	}
 
 	IEnumerator CheckSymbols() {
-
-
 
 		while (true) {
 
@@ -75,6 +77,12 @@ public class miniBossController : MonoBehaviour {
 			else if(curretnDist < 6)
             {
 				print ("Baphomet has seen a player");
+
+				if (!musicOn) {
+					musicOn = true;
+					contlvl.GetComponent<Level2Controller> ().BossEncounter ();
+				}
+
                 temp = current.ApplySymbol(far);
 				if(curretnDist < 4)
                 {
@@ -101,8 +109,6 @@ public class miniBossController : MonoBehaviour {
 		
 		while (true) {
 			
-
-
 			yield return new WaitForSeconds (6);
 			State temp = current.ApplySymbol (time);
 			current = temp;
