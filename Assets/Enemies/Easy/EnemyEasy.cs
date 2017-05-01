@@ -9,12 +9,18 @@ public class EnemyEasy : MonoBehaviour {
 	public Animator anim;
 	public float defaultSpeed;
 	public double attackDistance;
+    public AudioClip hurt; 
 
 	private Transform enemySprite;
 	private Transform target;
 	private bool dead;
+    private AudioSource source;
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
-	void Start () {
+    void Start () {
 		enemySprite = transform.GetChild (0);
         //life = 10;
 
@@ -56,16 +62,17 @@ public class EnemyEasy : MonoBehaviour {
 
     void OnTriggerEnter(Collider c)
     {
-		if (c.gameObject.layer == 9 && life < 2 && !dead)
+        if (c.gameObject.layer == 9 && life < 2 && !dead)
         {
             dead = true;
-			GameController.addExp (this.XP);
+            GameController.addExp(this.XP);
             anim.SetTrigger("dead");
-			StartCoroutine ( WhenNotDestroyed () );
+            StartCoroutine(WhenNotDestroyed());
         }
-        else if(c.gameObject.layer == 9 && !dead)
+        else if (c.gameObject.layer == 9 && !dead)
         {
-			life--;
+            life--;
+            source.PlayOneShot(hurt);
             anim.SetTrigger("hurt");
         }
         

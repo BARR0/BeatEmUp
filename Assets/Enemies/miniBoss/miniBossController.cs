@@ -10,6 +10,7 @@ public class miniBossController : MonoBehaviour {
 	public Vector3[] spawns;
 	//public GameObject minion;
 	public Animator anim;
+    public AudioClip hurt;
 	//public float defaultSpeed;
 	//public double attackDistance;
 
@@ -17,9 +18,14 @@ public class miniBossController : MonoBehaviour {
 	private Symbol close, far, low, time,midclose;
 	private MonoBehaviour currentBehavior;
 	private Coroutine timecounter;
+    private AudioSource source;
 
 	private bool dead;
 
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 	// Use this for initialization
 	void Start () {
 		midclose = new Symbol ("midclose");
@@ -129,8 +135,10 @@ public class miniBossController : MonoBehaviour {
         }
 		else if(c.gameObject.layer == 9 && !dead)
 		{
-			anim.SetTrigger("hurt");
-			life--;
+            life--;
+            source.PlayOneShot(hurt);
+            anim.SetTrigger("hurt");
+			
 		}
 
 	}

@@ -9,10 +9,17 @@ public class EnemyMedium : MonoBehaviour {
     public Animator anim;
     public float defaultSpeed;
     public double attackDistance;
+    public AudioClip hurt;
 
     private Transform enemySprite;
     private Transform target;
     private bool dead;
+    private AudioSource source;
+
+    void Awake()
+    {
+        source = source = GetComponent<AudioSource>();
+    }
 
     void Start()
     {
@@ -45,14 +52,14 @@ public class EnemyMedium : MonoBehaviour {
             enemySprite.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        if (attackDistance < Mathf.Abs(Vector3.Distance(this.transform.position, target.position)) && !dead)
+        if (!currentState.IsName("atk") && attackDistance < Mathf.Abs(Vector3.Distance(this.transform.position, target.position)) && !dead)
         {
 
             anim.SetBool("moving", true);
             this.transform.Translate(movement);
 
         }
-        else if (!currentState.IsName("atk") && !dead)
+        if (!currentState.IsName("atk") && attackDistance >= Mathf.Abs(Vector3.Distance(this.transform.position, target.position)) && !dead)
         {
 
             anim.SetBool("moving", false);
@@ -71,8 +78,10 @@ public class EnemyMedium : MonoBehaviour {
         }
         else if (c.gameObject.layer == 9 && !dead)
         {
-            //anim.SetTrigger("hurt");
             life--;
+            source.PlayOneShot(hurt);
+            anim.SetTrigger("hurt");
+            
         }
 
     }

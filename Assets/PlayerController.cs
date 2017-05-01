@@ -97,13 +97,14 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter (Collider c) {
 		if (life > 0 && c.gameObject.layer == 11) {
 			life--;
-            source.PlayOneShot(hurt, 1);
+            source.PlayOneShot(hurt);
             anim.SetTrigger ("hurt");
 		}
 		if (life <= 0) {
-			//CapsuleCollider playerCol = this.GetComponent<CapsuleCollider> ();
-			//playerCol.enabled = false;
-			anim.SetTrigger ("dead");
+            //CapsuleCollider playerCol = this.GetComponent<CapsuleCollider> ();
+            //playerCol.enabled = false;
+            source.PlayOneShot(hurt);
+            anim.SetTrigger ("dead");
 		}
 	}
 
