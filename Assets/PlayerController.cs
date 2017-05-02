@@ -113,7 +113,8 @@ public class PlayerController : MonoBehaviour {
 			source.clip = clips [0];
 			source.Play();
             ///source.PlayOneShot(hurt, 1);
-            anim.SetTrigger ("hurt");
+			if(!anim.GetCurrentAnimatorStateInfo (0).IsName("hurt"))
+            	anim.SetTrigger ("hurt");
 		}
 		if (life <= 0) {
             //CapsuleCollider playerCol = this.GetComponent<CapsuleCollider> ();
