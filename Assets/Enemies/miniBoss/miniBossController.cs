@@ -169,7 +169,7 @@ public class miniBossController : MonoBehaviour {
 
     IEnumerator WhenDestroyed()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene("Game Over");
         //Destroy(this.gameObject);
     }
