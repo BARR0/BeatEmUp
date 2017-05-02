@@ -15,13 +15,13 @@ public class MenuLogic : MonoBehaviour {
 
 		if (Input.GetAxis ("Fire1") != 0) {
 
-			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+			SceneManager.LoadScene ("CharSelect");
 		}
 
 	}
 
 	public void Startgame() {
 
-		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+		SceneManager.LoadScene ("CharSelect");
 	}
 }
