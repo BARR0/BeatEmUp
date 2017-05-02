@@ -71,17 +71,30 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if (atk == 1 && oldAtk == 0) {
+            if(clips.Length > 2)
+            {
+                source.clip = clips[2];
+                source.Play();
+            }
 			anim.SetTrigger ("atk");
-			Debug.Log ("Attack");
 		}
 
 		if (atk2 == 1 && oldAtk2 == 0) {
-			anim.SetTrigger ("atk2");
-			Debug.Log ("Attack");
+            if (clips.Length > 3)
+            {
+                source.clip = clips[3];
+                source.Play();
+            }
+            anim.SetTrigger ("atk2");
 		}
 
 		if (atk3== 1 && oldAtk3 == 0 && level >= 3) {
-			anim.SetTrigger ("atk3");
+            if (clips.Length > 4)
+            {
+                source.clip = clips[4];
+                source.Play();
+            }
+            anim.SetTrigger ("atk3");
 			Debug.Log ("Attack");
 		}
 

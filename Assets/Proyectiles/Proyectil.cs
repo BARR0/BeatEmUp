@@ -4,12 +4,22 @@ using UnityEngine;
 
 public class Proyectil : MonoBehaviour {
 	private Rigidbody rb;
+    private AudioSource source;
+
 	public float force;
-    public Proyectil instance { get; set; }
+    public AudioClip sound;
+    public AudioClip soundHit;
 
 	// Use this for initialization
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 	void Start () {
-        instance = this;
+        if(sound != null)
+        {
+            source.PlayOneShot(sound);
+        }
         Destroy(gameObject, 10);
 	}
 
@@ -26,6 +36,10 @@ public class Proyectil : MonoBehaviour {
     {
         if(c.gameObject.layer == 10)
         {
+            if(soundHit != null)
+            {
+                source.PlayOneShot(soundHit);
+            }
             Destroy(this.gameObject);
         }
     }

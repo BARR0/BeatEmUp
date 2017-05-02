@@ -24,7 +24,7 @@ public class Level2Controller : MonoBehaviour
 	{
 		
 		backgroundmusic.clip = clips [0];
-		backgroundmusic.Play ();
+		backgroundmusic.Play();
 	}
 
     // Update is called once per frame
@@ -42,6 +42,6 @@ public class Level2Controller : MonoBehaviour
 	public void BossEncounter() 
 	{
 		backgroundmusic.clip = clips [1];
-		backgroundmusic.Play ();
+		backgroundmusic.Play();
 	}
 }
