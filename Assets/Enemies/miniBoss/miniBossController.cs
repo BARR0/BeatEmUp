@@ -10,6 +10,7 @@ public class miniBossController : MonoBehaviour {
 	public Vector3[] spawns;
 	//public GameObject minion;
 	public Animator anim;
+    public AudioClip hurt;
 	//public float defaultSpeed;
 	//public double attackDistance;
 
@@ -17,9 +18,17 @@ public class miniBossController : MonoBehaviour {
 	private Symbol close, far, low, time,midclose;
 	private MonoBehaviour currentBehavior;
 	private Coroutine timecounter;
+    private AudioSource source;
+
+	public Camera contlvl;
+	private bool musicOn;
 
 	private bool dead;
 
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 	// Use this for initialization
 	void Start () {
 		midclose = new Symbol ("midclose");
@@ -52,11 +61,10 @@ public class miniBossController : MonoBehaviour {
 		StartCoroutine (CheckSymbols());
 		timecounter =  StartCoroutine (CountTime ());
 		dead = false;
+		musicOn = false;
 	}
 
 	IEnumerator CheckSymbols() {
-
-
 
 		while (true) {
 
@@ -75,6 +83,12 @@ public class miniBossController : MonoBehaviour {
 			else if(curretnDist < 6)
             {
 				print ("Baphomet has seen a player");
+
+				if (!musicOn) {
+					musicOn = true;
+					contlvl.GetComponent<Level2Controller> ().BossEncounter ();
+				}
+
                 temp = current.ApplySymbol(far);
 				if(curretnDist < 4)
                 {
@@ -101,8 +115,6 @@ public class miniBossController : MonoBehaviour {
 		
 		while (true) {
 			
-
-
 			yield return new WaitForSeconds (6);
 			State temp = current.ApplySymbol (time);
 			current = temp;
@@ -129,8 +141,10 @@ public class miniBossController : MonoBehaviour {
         }
 		else if(c.gameObject.layer == 9 && !dead)
 		{
-			anim.SetTrigger("hurt");
-			life--;
+            life--;
+            source.PlayOneShot(hurt);
+            anim.SetTrigger("hurt");
+			
 		}
 
 	}

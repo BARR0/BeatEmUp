@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour {
 	public Transform sprite;
     public string inputAxis;
 	public int life;
-    public AudioClip hurt;
+    public AudioClip[] clips;
+	public GameObject angelPrefab; // GameObject that appears to show that hte player leveled up
 
 	private float speed;
 	private float speedMultiplier; //if we use a speedBoost item
@@ -74,7 +75,6 @@ public class PlayerController : MonoBehaviour {
 			Debug.Log ("Attack");
 		}
 
-
 		if (atk2 == 1 && oldAtk2 == 0) {
 			anim.SetTrigger ("atk2");
 			Debug.Log ("Attack");
@@ -97,13 +97,17 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter (Collider c) {
 		if (life > 0 && c.gameObject.layer == 11) {
 			life--;
-            source.PlayOneShot(hurt, 1);
+			source.clip = clips [0];
+			source.Play();
+            ///source.PlayOneShot(hurt, 1);
             anim.SetTrigger ("hurt");
 		}
 		if (life <= 0) {
-			//CapsuleCollider playerCol = this.GetComponent<CapsuleCollider> ();
-			//playerCol.enabled = false;
-			anim.SetTrigger ("dead");
+            //CapsuleCollider playerCol = this.GetComponent<CapsuleCollider> ();
+            //playerCol.enabled = false;
+            source.clip = clips[0];
+            source.Play();
+            anim.SetTrigger ("dead");
 		}
 	}
 
@@ -111,6 +115,10 @@ public class PlayerController : MonoBehaviour {
         get { return this.level; }
     }
 	public void gainLevel(){
+		Vector3 pos = new Vector3 (this.transform.localPosition.x, this.transform.localPosition.y + 30.0f, this.transform.localPosition.z);
+		Instantiate (angelPrefab, pos, angelPrefab.transform.rotation, this.gameObject.transform);
+		source.clip = clips [1];
+		source.Play ();
 		this.level++;
 	}
 }

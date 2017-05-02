@@ -9,15 +9,22 @@ public class EnemyMedium : MonoBehaviour {
     public Animator anim;
     public float defaultSpeed;
     public double attackDistance;
+    public AudioClip hurt;
 
     private Transform enemySprite;
     private Transform target;
     private bool dead;
+    private AudioSource source;
+
+    void Awake()
+    {
+        source = source = GetComponent<AudioSource>();
+    }
 
     void Start()
     {
         enemySprite = transform.GetChild(0);
-        life = 10;
+        //life = 10;
 
         //Init first target
         target = GameController.players[0].gameObject.transform;
@@ -45,14 +52,14 @@ public class EnemyMedium : MonoBehaviour {
             enemySprite.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        if (attackDistance < Mathf.Abs(Vector3.Distance(this.transform.position, target.position)) && !dead)
+        if (!currentState.IsName("atk") && attackDistance < Mathf.Abs(Vector3.Distance(this.transform.position, target.position)) && !dead)
         {
 
             anim.SetBool("moving", true);
             this.transform.Translate(movement);
 
         }
-        else if (!currentState.IsName("atk") && !dead)
+        if (!currentState.IsName("atk") && attackDistance >= Mathf.Abs(Vector3.Distance(this.transform.position, target.position)) && !dead)
         {
 
             anim.SetBool("moving", false);
@@ -62,17 +69,20 @@ public class EnemyMedium : MonoBehaviour {
 
     void OnTriggerEnter(Collider c)
     {
-        if (life < 1 && !dead)
+        if (c.gameObject.layer == 9 && life < 2 && !dead)
         {
             dead = true;
 			GameController.addExp (this.XP);
             anim.SetTrigger("dead");
-            //Destroy(this);
+            StartCoroutine(WhenNotDestroyed());
         }
         else if (c.gameObject.layer == 9 && !dead)
         {
-            //anim.SetTrigger("hurt");
             life--;
+            anim.SetBool("moving", false);
+            source.PlayOneShot(hurt);
+            anim.SetTrigger("hurt");
+            
         }
 
     }
@@ -102,4 +112,10 @@ public class EnemyMedium : MonoBehaviour {
 			yield return new WaitForSeconds (1);
 		}
 	}
+    IEnumerator WhenNotDestroyed()
+    {
+
+        yield return new WaitForSeconds(1);
+        Destroy(this.gameObject);
+    }
 }

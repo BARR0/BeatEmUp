@@ -9,12 +9,19 @@ public class EnemyEasy : MonoBehaviour {
 	public Animator anim;
 	public float defaultSpeed;
 	public double attackDistance;
+    public AudioClip hurt; 
 
 	private Transform enemySprite;
 	private Transform target;
 	private bool dead;
+    private AudioSource source;
 
-	void Start () {
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
+    void Start () {
 		enemySprite = transform.GetChild (0);
         //life = 10;
 
@@ -41,7 +48,7 @@ public class EnemyEasy : MonoBehaviour {
 			enemySprite.transform.rotation = Quaternion.Euler (0, 0, 0);
 		}
 
-		if (!currentState.IsName("atk")  && attackDistance < Mathf.Abs (Vector3.Distance (this.transform.position, target.position)) && !dead ) {
+		if (!currentState.IsName("atk")  && attackDistance < Mathf.Abs (Vector3.Distance (this.transform.position, target.position)) && !dead) {
 
 			anim.SetBool ("moving", true);
 			this.transform.Translate (movement);
@@ -56,16 +63,18 @@ public class EnemyEasy : MonoBehaviour {
 
     void OnTriggerEnter(Collider c)
     {
-		if (c.gameObject.layer == 9 && life < 2 && !dead)
+        if (c.gameObject.layer == 9 && life < 2 && !dead)
         {
             dead = true;
-			GameController.addExp (this.XP);
+            GameController.addExp(this.XP);
             anim.SetTrigger("dead");
-			StartCoroutine ( WhenNotDestroyed () );
+            StartCoroutine(WhenNotDestroyed());
         }
-        else if(c.gameObject.layer == 9 && !dead)
+        else if (c.gameObject.layer == 9 && !dead)
         {
-			life--;
+            life--;
+            anim.SetBool("moving", false);
+            source.PlayOneShot(hurt);
             anim.SetTrigger("hurt");
         }
         
@@ -98,7 +107,7 @@ public class EnemyEasy : MonoBehaviour {
 
 	IEnumerator WhenNotDestroyed() {
 		
-		yield return new WaitForSeconds (2);
+		yield return new WaitForSeconds (1);
 		Destroy(this.gameObject);
 	}
 }
