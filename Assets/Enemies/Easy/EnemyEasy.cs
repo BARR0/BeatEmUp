@@ -15,6 +15,7 @@ public class EnemyEasy : MonoBehaviour {
 	private Transform target;
 	private bool dead;
     private AudioSource source;
+
     void Awake()
     {
         source = GetComponent<AudioSource>();
@@ -47,7 +48,7 @@ public class EnemyEasy : MonoBehaviour {
 			enemySprite.transform.rotation = Quaternion.Euler (0, 0, 0);
 		}
 
-		if (!currentState.IsName("atk")  && attackDistance < Mathf.Abs (Vector3.Distance (this.transform.position, target.position)) && !dead ) {
+		if (!currentState.IsName("atk")  && attackDistance < Mathf.Abs (Vector3.Distance (this.transform.position, target.position)) && !dead) {
 
 			anim.SetBool ("moving", true);
 			this.transform.Translate (movement);
@@ -72,6 +73,7 @@ public class EnemyEasy : MonoBehaviour {
         else if (c.gameObject.layer == 9 && !dead)
         {
             life--;
+            anim.SetBool("moving", false);
             source.PlayOneShot(hurt);
             anim.SetTrigger("hurt");
         }
@@ -105,7 +107,7 @@ public class EnemyEasy : MonoBehaviour {
 
 	IEnumerator WhenNotDestroyed() {
 		
-		yield return new WaitForSeconds (2);
+		yield return new WaitForSeconds (1);
 		Destroy(this.gameObject);
 	}
 }

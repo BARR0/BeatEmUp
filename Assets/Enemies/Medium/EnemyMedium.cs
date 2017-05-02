@@ -24,7 +24,7 @@ public class EnemyMedium : MonoBehaviour {
     void Start()
     {
         enemySprite = transform.GetChild(0);
-        life = 10;
+        //life = 10;
 
         //Init first target
         target = GameController.players[0].gameObject.transform;
@@ -69,16 +69,17 @@ public class EnemyMedium : MonoBehaviour {
 
     void OnTriggerEnter(Collider c)
     {
-        if (life < 1 && !dead)
+        if (c.gameObject.layer == 9 && life < 2 && !dead)
         {
             dead = true;
 			GameController.addExp (this.XP);
             anim.SetTrigger("dead");
-            //Destroy(this);
+            StartCoroutine(WhenNotDestroyed());
         }
         else if (c.gameObject.layer == 9 && !dead)
         {
             life--;
+            anim.SetBool("moving", false);
             source.PlayOneShot(hurt);
             anim.SetTrigger("hurt");
             
@@ -111,4 +112,10 @@ public class EnemyMedium : MonoBehaviour {
 			yield return new WaitForSeconds (1);
 		}
 	}
+    IEnumerator WhenNotDestroyed()
+    {
+
+        yield return new WaitForSeconds(1);
+        Destroy(this.gameObject);
+    }
 }

@@ -17,11 +17,12 @@ public class Level2Controller : MonoBehaviour
 		foreach (PlayerController pc in GameController.players) {
 			pc.transform.position = spawn [counter++];
 		}
+        backgroundmusic = GetComponent<AudioSource>();
     }
 
 	void Start()
 	{
-		backgroundmusic = GetComponent<AudioSource> ();
+		
 		backgroundmusic.clip = clips [0];
 		backgroundmusic.Play ();
 	}

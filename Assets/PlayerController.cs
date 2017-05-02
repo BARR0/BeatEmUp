@@ -75,7 +75,6 @@ public class PlayerController : MonoBehaviour {
 			Debug.Log ("Attack");
 		}
 
-
 		if (atk2 == 1 && oldAtk2 == 0) {
 			anim.SetTrigger ("atk2");
 			Debug.Log ("Attack");
@@ -98,19 +97,16 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter (Collider c) {
 		if (life > 0 && c.gameObject.layer == 11) {
 			life--;
-<<<<<<< HEAD
-            source.PlayOneShot(hurt);
-=======
 			source.clip = clips [0];
-			source.Play ();
+			source.Play();
             ///source.PlayOneShot(hurt, 1);
->>>>>>> 8cfdc529aaa5219607996888e6ef66aadec30ef9
             anim.SetTrigger ("hurt");
 		}
 		if (life <= 0) {
             //CapsuleCollider playerCol = this.GetComponent<CapsuleCollider> ();
             //playerCol.enabled = false;
-            source.PlayOneShot(hurt);
+            source.clip = clips[0];
+            source.Play();
             anim.SetTrigger ("dead");
 		}
 	}

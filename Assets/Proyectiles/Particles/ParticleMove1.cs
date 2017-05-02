@@ -8,6 +8,10 @@ public class ParticleMove1 : MonoBehaviour {
     private AudioSource source;
 
 	// Use this for initialization
+    void Awake()
+    {
+        source = source = GetComponent<AudioSource>();
+    }
 	void Start () {
         source.PlayOneShot(sound);
 	}

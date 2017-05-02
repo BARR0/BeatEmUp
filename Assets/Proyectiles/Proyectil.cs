@@ -5,9 +5,11 @@ using UnityEngine;
 public class Proyectil : MonoBehaviour {
 	private Rigidbody rb;
 	public float force;
+    public Proyectil instance { get; set; }
 
 	// Use this for initialization
 	void Start () {
+        instance = this;
         Destroy(gameObject, 10);
 	}
 

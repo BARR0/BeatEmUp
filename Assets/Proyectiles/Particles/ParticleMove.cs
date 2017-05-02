@@ -6,6 +6,10 @@ public class ParticleMove : MonoBehaviour {
     public AudioClip sound;
 
     private AudioSource source;
+    void Awake()
+    {
+        source = source = GetComponent<AudioSource>();
+    }
 
 	// Use this for initialization
 	void Start () {
