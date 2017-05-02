@@ -45,7 +45,7 @@ public class UILogic2 : MonoBehaviour {
 
 		for(int i = 0; i < start.Length; ++i){
 			if(start[i] == 1 && oldstart[i] == 0)
-				SceneManager.LoadScene ("Level1Scene");
+				StartGame();
 			oldstart [i] = start [i];
 		}
 
