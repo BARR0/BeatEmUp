@@ -172,13 +172,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.8
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -276,7 +276,7 @@ MonoBehaviour:
   life: 150
   clips:
   - {fileID: 8300000, guid: 4bb0536b72c8be1469279cbd0d3b018d, type: 3}
-  - {fileID: 8300000, guid: 3f2a7b7b009c77e49b0cb3e634560249, type: 3}
+  - {fileID: 0}
   - {fileID: 8300000, guid: 901780565e3d0c74dacb131fc81ced2e, type: 3}
   angelPrefab: {fileID: 1826568268202316, guid: d11edec38c2105c448d2ebf2f679427c,
     type: 2}

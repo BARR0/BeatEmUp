@@ -609,6 +609,11 @@ Prefab:
       propertyPath: contlvl
       value: 
       objectReference: {fileID: 2091500944}
+    - target: {fileID: 114380285361971656, guid: d7fa92b8de81ee74ebeea6982bfcd168,
+        type: 2}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7fa92b8de81ee74ebeea6982bfcd168, type: 2}
   m_IsPrefabParent: 0
