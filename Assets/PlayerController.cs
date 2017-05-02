@@ -130,8 +130,11 @@ public class PlayerController : MonoBehaviour {
 	public void gainLevel(){
 		Vector3 pos = new Vector3 (this.transform.localPosition.x, this.transform.localPosition.y + 30.0f, this.transform.localPosition.z);
 		Instantiate (angelPrefab, pos, angelPrefab.transform.rotation, this.gameObject.transform);
-		source.clip = clips [1];
-		source.Play ();
+        if(clips[1] != null)
+        {
+            source.clip = clips[1];
+            source.Play();
+        }
 		this.level++;
 	}
 }
