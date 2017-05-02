@@ -82,8 +82,6 @@ public class miniBossController : MonoBehaviour {
 			}
 			else if(curretnDist < 6)
             {
-				print ("Baphomet has seen a player");
-
 				if (!musicOn) {
 					musicOn = true;
 					contlvl.GetComponent<Level2Controller> ().BossEncounter ();
@@ -136,15 +134,13 @@ public class miniBossController : MonoBehaviour {
 			dead = true;
 			GameController.addExp (this.XP);
 			anim.SetTrigger("dead");
-            SceneManager.LoadScene("Game Over");
-            //Destroy(this);
+            StartCoroutine(WhenDestroyed());
         }
 		else if(c.gameObject.layer == 9 && !dead)
 		{
             life--;
             source.PlayOneShot(hurt);
             anim.SetTrigger("hurt");
-			
 		}
 
 	}
@@ -170,4 +166,11 @@ public class miniBossController : MonoBehaviour {
 			return null;
 		return dummy.transform;
 	}
+
+    IEnumerator WhenDestroyed()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Game Over");
+        //Destroy(this.gameObject);
+    }
 }
