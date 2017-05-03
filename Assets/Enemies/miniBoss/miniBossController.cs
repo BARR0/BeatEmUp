@@ -130,11 +130,11 @@ public class miniBossController : MonoBehaviour {
 	{
 		if (life < 1 && !dead)
 		{
+			StartCoroutine(WhenDestroyed());	
 			Destroy (currentBehavior);
 			dead = true;
 			GameController.addExp (this.XP);
 			anim.SetTrigger("dead");
-            StartCoroutine(WhenDestroyed());
         }
 		else if(c.gameObject.layer == 9 && !dead)
 		{
@@ -169,7 +169,7 @@ public class miniBossController : MonoBehaviour {
 
     IEnumerator WhenDestroyed()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene("Game Over");
         //Destroy(this.gameObject);
     }
