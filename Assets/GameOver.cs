@@ -12,6 +12,7 @@ public class GameOver : MonoBehaviour {
 	
 	IEnumerator Reset(){
 		yield return new WaitForSeconds(10);
+		GameController.gcReset ();
 		SceneManager.LoadScene ("MainMenu");
 	}
 }
