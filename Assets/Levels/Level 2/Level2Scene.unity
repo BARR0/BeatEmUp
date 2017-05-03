@@ -609,6 +609,11 @@ Prefab:
       propertyPath: contlvl
       value: 
       objectReference: {fileID: 2091500944}
+    - target: {fileID: 114380285361971656, guid: d7fa92b8de81ee74ebeea6982bfcd168,
+        type: 2}
+      propertyPath: life
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7fa92b8de81ee74ebeea6982bfcd168, type: 2}
   m_IsPrefabParent: 0
@@ -2200,13 +2205,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 256
+  Priority: 132
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
