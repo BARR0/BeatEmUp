@@ -122,6 +122,9 @@ public class PlayerController : MonoBehaviour {
             source.Play();
             anim.SetTrigger ("dead");
 		}
+		if (c.gameObject.tag == "heal") {
+			life++;
+		}
 	}
 
     public int Level{
