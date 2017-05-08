@@ -52,7 +52,7 @@ GameObject:
   - component: {fileID: 212464187644036460}
   - component: {fileID: 95748623035840704}
   - component: {fileID: 114907995320457128}
-  - component: {fileID: 114567523395972102}
+  - component: {fileID: 114196208504446784}
   m_Layer: 0
   m_Name: gunslingerF_0
   m_TagString: Untagged
@@ -267,7 +267,7 @@ MonoBehaviour:
   - {fileID: 0}
   angelPrefab: {fileID: 1826568268202316, guid: d11edec38c2105c448d2ebf2f679427c,
     type: 2}
---- !u!114 &114567523395972102
+--- !u!114 &114196208504446784
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -279,6 +279,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newSprite: {fileID: 21300000, guid: c16e1da18e8609748ab6c7d0745cae52, type: 3}
+  offset: -0.4
+  rac: {fileID: 9100000, guid: c4483f00246d6b8489091d62397111d4, type: 2}
 --- !u!114 &114907995320457128
 MonoBehaviour:
   m_ObjectHideFlags: 1

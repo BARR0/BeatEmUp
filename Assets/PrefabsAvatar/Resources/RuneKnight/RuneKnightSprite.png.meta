@@ -1,0 +1,580 @@
+fileFormatVersion: 2
+guid: b26f38fb66cb9d94f9eecf65c7364544
+timeCreated: 1494201770
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: RuneKnightSprite_0
+    21300002: RuneKnightSprite_1
+    21300004: RuneKnightSprite_2
+    21300006: RuneKnightSprite_3
+    21300008: RuneKnightSprite_4
+    21300010: RuneKnightSprite_5
+    21300012: RuneKnightSprite_6
+    21300014: RuneKnightSprite_7
+    21300016: RuneKnightSprite_8
+    21300018: RuneKnightSprite_9
+    21300020: RuneKnightSprite_10
+    21300022: RuneKnightSprite_11
+    21300024: RuneKnightSprite_12
+    21300026: RuneKnightSprite_13
+    21300028: RuneKnightSprite_14
+    21300030: RuneKnightSprite_15
+    21300032: RuneKnightSprite_16
+    21300034: RuneKnightSprite_17
+    21300036: RuneKnightSprite_18
+    21300038: RuneKnightSprite_19
+    21300040: RuneKnightSprite_20
+    21300042: RuneKnightSprite_21
+    21300044: RuneKnightSprite_22
+    21300046: RuneKnightSprite_23
+    21300048: RuneKnightSprite_24
+    21300050: RuneKnightSprite_25
+    21300052: RuneKnightSprite_26
+    21300054: RuneKnightSprite_27
+    21300056: RuneKnightSprite_28
+    21300058: RuneKnightSprite_29
+    21300060: RuneKnightSprite_30
+    21300062: RuneKnightSprite_31
+    21300064: RuneKnightSprite_32
+    21300066: RuneKnightSprite_33
+    21300068: RuneKnightSprite_34
+    21300070: RuneKnightSprite_35
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RuneKnightSprite_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 559
+        width: 32
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 559
+        width: 36
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 559
+        width: 45
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 558
+        width: 41
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 557
+        width: 33
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_5
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 558
+        width: 40
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_6
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 558
+        width: 46
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_7
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 559
+        width: 43
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_8
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 552
+        width: 40
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_9
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 555
+        width: 51
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_10
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 552
+        width: 61
+        height: 63
+      alignment: 9
+      pivot: {x: 0.19875449, y: 0.0364593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_11
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 411
+        width: 87
+        height: 98
+      alignment: 9
+      pivot: {x: 0.15144232, y: 0.009374813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_12
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 418
+        width: 86
+        height: 97
+      alignment: 9
+      pivot: {x: 0.13675477, y: 0.014207033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_13
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 419
+        width: 85
+        height: 96
+      alignment: 9
+      pivot: {x: 0.14591837, y: 0.0051797233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_14
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 419
+        width: 85
+        height: 95
+      alignment: 9
+      pivot: {x: 0.14770329, y: 0.00967086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_15
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 417
+        width: 85
+        height: 96
+      alignment: 9
+      pivot: {x: 0.15290958, y: 0.008780162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_16
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 416
+        width: 86
+        height: 97
+      alignment: 9
+      pivot: {x: 0.15204497, y: 0.0043448224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_17
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 434
+        width: 50
+        height: 93
+      alignment: 9
+      pivot: {x: 0.38198853, y: 0.0045316964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_18
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 302
+        width: 50
+        height: 67
+      alignment: 9
+      pivot: {x: 0.17611176, y: -0.014120073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_19
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 311
+        width: 49
+        height: 57
+      alignment: 9
+      pivot: {x: 0.106137335, y: -0.046173632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_20
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 302
+        width: 56
+        height: 89
+      alignment: 9
+      pivot: {x: 0.43979046, y: -0.00000034289414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_21
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 303
+        width: 48
+        height: 88
+      alignment: 9
+      pivot: {x: 0.3858522, y: -0.00000034679067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_22
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 302
+        width: 60
+        height: 79
+      alignment: 9
+      pivot: {x: 0.27521718, y: 0.0053347815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_23
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 302
+        width: 63
+        height: 78
+      alignment: 9
+      pivot: {x: 0.2993014, y: -0.0054035676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_24
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 155
+        width: 56
+        height: 90
+      alignment: 9
+      pivot: {x: 0.43226418, y: -0.0000001695421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_25
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 155
+        width: 80
+        height: 88
+      alignment: 9
+      pivot: {x: 0.2523884, y: -0.00000017339534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_26
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 156
+        width: 81
+        height: 86
+      alignment: 9
+      pivot: {x: 0.22422546, y: -0.014702376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_27
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 158
+        width: 112
+        height: 81
+      alignment: 9
+      pivot: {x: 0.46989495, y: 0.0052030585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_28
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 159
+        width: 98
+        height: 79
+      alignment: 9
+      pivot: {x: 0.54730725, y: -0.00000019314923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_29
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 159
+        width: 102
+        height: 78
+      alignment: 9
+      pivot: {x: 0.5743761, y: -0.0000001956255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_30
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 32
+        width: 85
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_31
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 31
+        width: 103
+        height: 90
+      alignment: 9
+      pivot: {x: 0.4631727, y: 0.0046828375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_32
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 31
+        width: 91
+        height: 89
+      alignment: 9
+      pivot: {x: 0.45831636, y: -0.0000001285853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_33
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 37
+        width: 70
+        height: 81
+      alignment: 9
+      pivot: {x: 0.43376902, y: -0.00000042385525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_34
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 41
+        width: 102
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5743761, y: -0.00000014486191}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RuneKnightSprite_35
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 37
+        width: 127
+        height: 80
+      alignment: 9
+      pivot: {x: 0.675887, y: -0.00000042915343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
