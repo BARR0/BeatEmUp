@@ -6,7 +6,8 @@ using UnityEngine;
 public class Evolve : MonoBehaviour {
 
 	public Sprite newSprite;
-	public float offset;
+	public float offsety;
+	public float offsetx;
 	public RuntimeAnimatorController rac;
 
 	private PlayerController pc;
@@ -19,9 +20,9 @@ public class Evolve : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if ( pc.Level > 6 ) {
+		if ( pc.Level > 6 /*|| true*/) {
 
-			transform.Translate (0, offset, 0);
+			transform.Translate (offsetx, offsety, 0);
 			//GetComponent<Animator> ().runtimeAnimatorController = (RuntimeAnimatorController)newController;
 
 			//GetComponent<Animator> ().runtimeAnimatorController = Resources.Load (path_Controller) as RuntimeAnimatorController;

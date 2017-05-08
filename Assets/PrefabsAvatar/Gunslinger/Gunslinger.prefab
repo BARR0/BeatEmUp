@@ -279,7 +279,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newSprite: {fileID: 21300000, guid: c16e1da18e8609748ab6c7d0745cae52, type: 3}
-  offset: -0.4
+  offsety: -0.4
+  offsetx: 0
   rac: {fileID: 9100000, guid: c4483f00246d6b8489091d62397111d4, type: 2}
 --- !u!114 &114907995320457128
 MonoBehaviour:
