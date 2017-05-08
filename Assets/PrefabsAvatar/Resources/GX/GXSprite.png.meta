@@ -1,13 +1,47 @@
 fileFormatVersion: 2
 guid: 9938dd4104c687445911eb08dc50e56b
-timeCreated: 1494261166
+timeCreated: 1494278436
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: GXSprite_0
+    21300002: GXSprite_1
+    21300004: GXSprite_2
+    21300006: GXSprite_3
+    21300008: GXSprite_4
+    21300010: GXSprite_5
+    21300012: GXSprite_6
+    21300014: GXSprite_7
+    21300016: GXSprite_8
+    21300018: GXSprite_9
+    21300020: GXSprite_10
+    21300022: GXSprite_11
+    21300024: GXSprite_12
+    21300026: GXSprite_13
+    21300028: GXSprite_23
+    21300030: GXSprite_14
+    21300032: GXSprite_15
+    21300034: GXSprite_16
+    21300036: GXSprite_17
+    21300038: GXSprite_18
+    21300040: GXSprite_19
+    21300042: GXSprite_20
+    21300044: GXSprite_21
+    21300046: GXSprite_22
+    21300048: GXSprite_24
+    21300050: GXSprite_25
+    21300052: GXSprite_26
+    21300054: GXSprite_27
+    21300056: GXSprite_28
+    21300058: GXSprite_29
+    21300060: GXSprite_30
+    21300062: GXSprite_31
+    21300064: GXSprite_32
+    21300066: GXSprite_33
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -27,14 +61,14 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,9 +76,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
@@ -58,9 +92,459 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GXSprite_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 716
+        width: 34
+        height: 95
+      alignment: 9
+      pivot: {x: 0.56374025, y: 0.0300248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 716
+        width: 34
+        height: 95
+      alignment: 9
+      pivot: {x: 0.53929496, y: 0.015825452}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 717
+        width: 34
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5766633, y: 0.020405222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 717
+        width: 34
+        height: 94
+      alignment: 9
+      pivot: {x: 0.63664067, y: 0.0033445966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_4
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 717
+        width: 34
+        height: 94
+      alignment: 9
+      pivot: {x: 0.658651, y: 0.009991585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_5
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 717
+        width: 34
+        height: 94
+      alignment: 9
+      pivot: {x: 0.6432163, y: -0.00030257853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 537
+        width: 31
+        height: 92
+      alignment: 9
+      pivot: {x: 0.54836017, y: 0.016294396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_7
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 537
+        width: 47
+        height: 91
+      alignment: 9
+      pivot: {x: 0.6200406, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_8
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 537
+        width: 47
+        height: 90
+      alignment: 9
+      pivot: {x: 0.56002027, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_9
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 535
+        width: 39
+        height: 93
+      alignment: 9
+      pivot: {x: 0.54339916, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_10
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 536
+        width: 29
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_11
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 536
+        width: 48
+        height: 92
+      alignment: 9
+      pivot: {x: 0.59403163, y: 0.0061327065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 538
+        width: 44
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_13
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 537
+        width: 36
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_23
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 291
+        width: 40
+        height: 98
+      alignment: 9
+      pivot: {x: 0.14811555, y: 0.008754808}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_14
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 403
+        width: 45
+        height: 81
+      alignment: 9
+      pivot: {x: 0.6629883, y: 0.034826584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_15
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 412
+        width: 65
+        height: 58
+      alignment: 9
+      pivot: {x: 0.13544594, y: 0.08754704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_16
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 278
+        width: 45
+        height: 97
+      alignment: 9
+      pivot: {x: 0.50228274, y: 0.011126646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_17
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 283
+        width: 37
+        height: 85
+      alignment: 9
+      pivot: {x: 0.41470915, y: 0.007100184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_18
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 283
+        width: 37
+        height: 85
+      alignment: 9
+      pivot: {x: 0.42368048, y: 0.0027383242}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_19
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 284
+        width: 95
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5169218, y: 0.018499138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_20
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 283
+        width: 105
+        height: 88
+      alignment: 9
+      pivot: {x: 0.54516107, y: 0.0047173933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_21
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 283
+        width: 103
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5273722, y: 0.013677076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_22
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 281
+        width: 94
+        height: 90
+      alignment: 9
+      pivot: {x: 0.652871, y: 0.009748671}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_24
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 136
+        width: 32
+        height: 97
+      alignment: 9
+      pivot: {x: 0.31956053, y: -0.0020242278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_25
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 135
+        width: 32
+        height: 97
+      alignment: 9
+      pivot: {x: 0.31894636, y: 0.013734798}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_26
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 138
+        width: 45
+        height: 88
+      alignment: 9
+      pivot: {x: 0.16830784, y: 0.004612836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_27
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 138
+        width: 45
+        height: 88
+      alignment: 9
+      pivot: {x: 0.1596517, y: 0.0049478356}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_28
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 15
+        width: 36
+        height: 96
+      alignment: 9
+      pivot: {x: 0.61847377, y: 0.013979892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_29
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 12
+        width: 38
+        height: 89
+      alignment: 9
+      pivot: {x: 0.10643156, y: 0.0050025363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_30
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 15
+        width: 34
+        height: 95
+      alignment: 9
+      pivot: {x: 0.56873816, y: 0.010026772}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_31
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 14
+        width: 43
+        height: 96
+      alignment: 9
+      pivot: {x: 0.60664755, y: 0.013570418}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_32
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 13
+        width: 50
+        height: 97
+      alignment: 9
+      pivot: {x: 0.50916475, y: 0.009921231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GXSprite_33
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 13
+        width: 50
+        height: 97
+      alignment: 9
+      pivot: {x: 0.51656187, y: -0.0021255042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

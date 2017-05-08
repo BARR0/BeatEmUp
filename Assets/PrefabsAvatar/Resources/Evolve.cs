@@ -20,7 +20,7 @@ public class Evolve : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if ( pc.Level > 6 /*|| true*/) {
+		if ( pc.Level > 6 || true) {
 
 			transform.Translate (offsetx, offsety, 0);
 			//GetComponent<Animator> ().runtimeAnimatorController = (RuntimeAnimatorController)newController;

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114509419396847674}
   m_Layer: 9
   m_Name: Heal
-  m_TagString: Untagged
+  m_TagString: heal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -203,7 +203,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 189668980
+  randomSeed: -72701424
   InitialModule:
     serializedVersion: 3
     enabled: 1

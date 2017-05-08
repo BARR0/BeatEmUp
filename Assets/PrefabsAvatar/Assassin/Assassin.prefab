@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 212846569446549008}
   - component: {fileID: 95239492233197956}
   - component: {fileID: 114449021188025892}
+  - component: {fileID: 114902864895217750}
   m_Layer: 0
   m_Name: assXSpriteF_0
   m_TagString: Untagged
@@ -114,7 +115,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1119155884954548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0.085, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4097254947075358}
@@ -292,6 +293,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shuriken: {fileID: 1952277655588742, guid: a4eed10cfa734374580791146a762a96, type: 2}
+--- !u!114 &114902864895217750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1231462032996470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a125f9f280664c74a9d172660e7e2db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 9938dd4104c687445911eb08dc50e56b, type: 3}
+  offsety: -0.4
+  offsetx: 0.04
+  rac: {fileID: 9100000, guid: bb766d000dd83da468e0622ad1ab2c26, type: 2}
 --- !u!136 &136674902128613926
 CapsuleCollider:
   m_ObjectHideFlags: 1
