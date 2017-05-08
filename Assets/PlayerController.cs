@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour {
     private int level;
     private AudioSource source;
 
+	private bool invincible;
+	private int max_hits;
+
 	private float oldAtk;
 	private float oldAtk2;
 	private float oldAtk3;
@@ -35,6 +38,9 @@ public class PlayerController : MonoBehaviour {
         this.speedMultiplier = 1;
         this.speed = DEFAULT_SPEED;
         this.level = 1;
+		invincible = false;
+		max_hits = 0;
+		//StartCoroutine (invincibility ());
 		//this.inputAxis = GameController.controllers [this.prefab];
 		//print(this.prefab.name);
 	}
@@ -108,11 +114,11 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider c) {
-		if (life > 0 && c.gameObject.layer == 11) {
+		if (life > 0 && c.gameObject.layer == 11 && !invincible) {
 			life--;
 			source.clip = clips [0];
 			source.Play();
-            ///source.PlayOneShot(hurt, 1);
+			max_hits++;
             anim.SetTrigger ("hurt");
 		}
 		if (life <= 0) {
@@ -130,6 +136,7 @@ public class PlayerController : MonoBehaviour {
     public int Level{
         get { return this.level; }
     }
+
 	public void gainLevel(){
 		Vector3 pos = new Vector3 (this.transform.localPosition.x, this.transform.localPosition.y + 30.0f, this.transform.localPosition.z);
 		Instantiate (angelPrefab, pos, angelPrefab.transform.rotation, this.gameObject.transform);
@@ -139,5 +146,27 @@ public class PlayerController : MonoBehaviour {
             source.Play();
         }
 		this.level++;
+	}
+
+	private IEnumerator invincibility() {
+
+		SpriteRenderer mySprite = transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>();
+
+		while (true) {
+
+			yield return new WaitUntil (() => max_hits >= 5);
+			invincible = true;
+			max_hits = 0;
+
+		
+
+			mySprite.enabled = !mySprite.enabled;
+
+
+
+
+
+			invincible = false;
+		}
 	}
 }
