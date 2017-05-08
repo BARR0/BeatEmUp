@@ -1,0 +1,482 @@
+fileFormatVersion: 2
+guid: 86972a78caeddbc4f8a67fe6fedd761a
+timeCreated: 1494278956
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: darklord_0
+    21300002: darklord_1
+    21300004: darklord_2
+    21300006: darklord_3
+    21300008: darklord_4
+    21300010: darklord_5
+    21300012: darklord_6
+    21300014: darklord_7
+    21300016: darklord_8
+    21300018: darklord_9
+    21300020: darklord_10
+    21300022: darklord_11
+    21300024: darklord_12
+    21300026: darklord_13
+    21300028: darklord_14
+    21300030: darklord_15
+    21300032: darklord_16
+    21300034: darklord_17
+    21300036: darklord_18
+    21300038: darklord_19
+    21300040: darklord_20
+    21300042: darklord_21
+    21300044: darklord_22
+    21300046: darklord_23
+    21300048: darklord_24
+    21300050: darklord_25
+    21300052: darklord_26
+    21300054: darklord_27
+    21300056: darklord_28
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: darklord_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2310
+        width: 141
+        height: 202
+      alignment: 9
+      pivot: {x: 0.45810068, y: 0.108827494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2299
+        width: 154
+        height: 211
+      alignment: 9
+      pivot: {x: 0.40409404, y: 0.115013376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_2
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 2299
+        width: 136
+        height: 211
+      alignment: 9
+      pivot: {x: 0.4945699, y: 0.10451301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_3
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 2296
+        width: 143
+        height: 216
+      alignment: 9
+      pivot: {x: 0.52582085, y: 0.11366781}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_4
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 2313
+        width: 127
+        height: 184
+      alignment: 9
+      pivot: {x: 0.51162934, y: 0.12273507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_5
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 2307
+        width: 130
+        height: 192
+      alignment: 9
+      pivot: {x: 0.48863855, y: 0.10768509}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1777
+        width: 141
+        height: 203
+      alignment: 9
+      pivot: {x: 0.4685755, y: 0.13258098}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_7
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1775
+        width: 154
+        height: 209
+      alignment: 9
+      pivot: {x: 0.42807057, y: 0.111328706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_8
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1776
+        width: 161
+        height: 209
+      alignment: 9
+      pivot: {x: 0.4220242, y: 0.10426206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_9
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1771
+        width: 172
+        height: 214
+      alignment: 9
+      pivot: {x: 0.43130457, y: 0.106606744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_10
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1769
+        width: 161
+        height: 216
+      alignment: 9
+      pivot: {x: 0.38532972, y: 0.09315491}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_11
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 1777
+        width: 132
+        height: 192
+      alignment: 9
+      pivot: {x: 0.49440604, y: 0.11153094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1273
+        width: 143
+        height: 203
+      alignment: 9
+      pivot: {x: 0.458129, y: 0.110661246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_13
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1267
+        width: 155
+        height: 210
+      alignment: 9
+      pivot: {x: 0.42660415, y: 0.12078799}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_14
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1260
+        width: 160
+        height: 212
+      alignment: 9
+      pivot: {x: 0.42515546, y: 0.10741957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_15
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1264
+        width: 146
+        height: 205
+      alignment: 9
+      pivot: {x: 0.43438303, y: 0.10569741}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_16
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1253
+        width: 158
+        height: 191
+      alignment: 9
+      pivot: {x: 0.43936622, y: 0.111278914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_17
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1256
+        width: 132
+        height: 187
+      alignment: 9
+      pivot: {x: 0.49546352, y: 0.10296402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_18
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 743
+        width: 153
+        height: 212
+      alignment: 9
+      pivot: {x: 0.43632486, y: 0.10785747}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_19
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 743
+        width: 159
+        height: 212
+      alignment: 9
+      pivot: {x: 0.43219185, y: 0.11008324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_20
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 737
+        width: 156
+        height: 218
+      alignment: 9
+      pivot: {x: 0.3792621, y: 0.109712094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_21
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 754
+        width: 111
+        height: 190
+      alignment: 9
+      pivot: {x: 0.5292556, y: 0.100053325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_22
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 753
+        width: 80
+        height: 192
+      alignment: 9
+      pivot: {x: 0.45940703, y: 0.124515854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_23
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 742
+        width: 82
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5237613, y: 0.0991208}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_24
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 826
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_25
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 801
+        width: 106
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_26
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 685
+        width: 109
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_27
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 685
+        width: 114
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_28
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 574
+        width: 90
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

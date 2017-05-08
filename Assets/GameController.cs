@@ -6,13 +6,18 @@ public class GameController : MonoBehaviour {
 
     public static Dictionary<GameObject, string> controllers;
 
-	public static List<PlayerController> players;
+	public static List<PlayerController> players, dead;
 
 	private static double exp;
 
 	public static void gcReset() {
+		if(GameController.players != null){
+			foreach (PlayerController pc in GameController.players)
+				Destroy (pc);
+		}
 		GameController.controllers = new Dictionary<GameObject, string>();
-		players = new List<PlayerController> (FindObjectsOfType (typeof(PlayerController)) as PlayerController[]);
+		GameController.players = new List<PlayerController> (FindObjectsOfType (typeof(PlayerController)) as PlayerController[]);
+		GameController.dead = new List<PlayerController> ();
 //		foreach (PlayerMove pm in players)
 //			print (pm);
 		GameController.exp = 0.0;
@@ -26,6 +31,7 @@ public class GameController : MonoBehaviour {
 	public static void removePlayer(PlayerController pm){
 		if (GameController.players.Contains (pm)) {
 			GameController.players.Remove (pm);
+			GameController.dead.Add (pm);
 		}
 	}
 
@@ -36,6 +42,15 @@ public class GameController : MonoBehaviour {
 			// clone.GetComponent<PlayerMove>().inputAxis = controllers[go];
 		}
 	}
+
+	public static void ReviveAll(){
+		foreach(PlayerController pc in dead){
+			GameController.players.Add (pc);
+			GameController.dead.Remove (pc);
+			Instantiate (pc);
+		}
+	}
+
 	public static void addExp(double moreexp){
 		GameController.exp += moreexp;
 		if (GameController.exp >= 1.0) {

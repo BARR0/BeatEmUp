@@ -118,6 +118,7 @@ public class PlayerController : MonoBehaviour {
 			life--;
 			source.clip = clips [0];
 			source.Play();
+
 			max_hits++;
             anim.SetTrigger ("hurt");
 		}
