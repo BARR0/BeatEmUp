@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 212277745260109328}
   - component: {fileID: 95946209804077158}
   - component: {fileID: 114482215836357726}
+  - component: {fileID: 114716893548506268}
   m_Layer: 0
   m_Name: knightsprites_0
   m_TagString: Untagged
@@ -334,6 +335,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stone: {fileID: 1988644891244034, guid: 03f653cccbce06144bb103dbf4581fe1, type: 2}
+--- !u!114 &114716893548506268
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1257477521537090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a125f9f280664c74a9d172660e7e2db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: b26f38fb66cb9d94f9eecf65c7364544, type: 3}
+  offsety: -0.5
+  offsetx: 0.1
+  rac: {fileID: 9100000, guid: 71d35b37d3e80b144976da369653e115, type: 2}
 --- !u!136 &136753830874997066
 CapsuleCollider:
   m_ObjectHideFlags: 1
