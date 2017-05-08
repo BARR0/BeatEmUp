@@ -5,6 +5,7 @@ using UnityEngine;
 public class Castable : MonoBehaviour {
 	public GameObject magic;
     public GameObject magic2;
+	public GameObject magic3;
 
 	private Transform spot;
 	private PlayerController par;
@@ -36,12 +37,13 @@ public class Castable : MonoBehaviour {
 			StartCoroutine (heal ());
 			flag = false;
 		}
+		Instantiate(magic3, spot.transform.position, transform.rotation);
 	}
 
 	IEnumerator heal(){
 		while (true) {
 			par.life++;
-			yield return new WaitForSeconds(1f);
+			yield return new WaitForSeconds(5f);
 		}
 	}
 }
