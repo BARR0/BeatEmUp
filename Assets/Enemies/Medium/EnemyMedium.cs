@@ -18,7 +18,7 @@ public class EnemyMedium : MonoBehaviour {
 
     void Awake()
     {
-        source = source = GetComponent<AudioSource>();
+    	source = GetComponent<AudioSource>();
     }
 
     void Start()

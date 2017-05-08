@@ -8,7 +8,7 @@ public class ParticleMove : MonoBehaviour {
     private AudioSource source;
     void Awake()
     {
-        source = source = GetComponent<AudioSource>();
+        source = GetComponent<AudioSource>();
     }
 
 	// Use this for initialization
