@@ -24,6 +24,7 @@ public class miniBossController : MonoBehaviour {
 	private bool musicOn;
 
 	private bool dead;
+	private CapsuleCollider cc;
 
     void Awake()
     {
@@ -31,6 +32,8 @@ public class miniBossController : MonoBehaviour {
     }
 	// Use this for initialization
 	void Start () {
+		cc = GetComponent<CapsuleCollider> ();
+
 		midclose = new Symbol ("midclose");
 		close = new Symbol("close");
 		far = new Symbol ("far");
@@ -130,6 +133,7 @@ public class miniBossController : MonoBehaviour {
 	{
 		if (life < 1 && !dead)
 		{
+			cc.enabled = false;
 			StartCoroutine(WhenDestroyed());	
 			Destroy (currentBehavior);
 			dead = true;

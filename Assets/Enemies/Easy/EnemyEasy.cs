@@ -72,6 +72,7 @@ public class EnemyEasy : MonoBehaviour {
         }
         else if (c.gameObject.layer == 9 && !dead)
         {
+			
             life--;
             anim.SetBool("moving", false);
             source.PlayOneShot(hurt);

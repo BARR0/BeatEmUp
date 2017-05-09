@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
     private AudioSource source;
 
 	private bool invincible;
-	private int max_hits;
+	private SpriteRenderer mySprite;
 
 	private float oldAtk;
 	private float oldAtk2;
@@ -39,8 +39,7 @@ public class PlayerController : MonoBehaviour {
         this.speed = DEFAULT_SPEED;
         this.level = 1;
 		invincible = false;
-		max_hits = 0;
-		//StartCoroutine (invincibility ());
+		mySprite = transform.GetChild (0).gameObject.GetComponent<SpriteRenderer> ();
 		//this.inputAxis = GameController.controllers [this.prefab];
 		//print(this.prefab.name);
 	}
@@ -94,7 +93,7 @@ public class PlayerController : MonoBehaviour {
             anim.SetTrigger ("atk2");
 		}
 
-		if (atk3== 1 && oldAtk3 == 0 && level >= 3) {
+		if (atk3== 1 && oldAtk3 == 0 && level >= 7) {
             if (clips.Length > 4)
             {
                 source.clip = clips[4];
@@ -114,13 +113,15 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider c) {
-		if (life > 0 && c.gameObject.layer == 11 && !invincible) {
+		if (life > 0 && c.gameObject.layer == 11) {
 			life--;
 			source.clip = clips [0];
-			source.Play();
 
-			max_hits++;
-            anim.SetTrigger ("hurt");
+			if (!invincible) {
+				StartCoroutine (invincibility ());
+				source.Play();
+				anim.SetTrigger ("hurt");
+			}
 		}
 		if (life <= 0) {
             //CapsuleCollider playerCol = this.GetComponent<CapsuleCollider> ();
@@ -150,24 +151,14 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	private IEnumerator invincibility() {
+		invincible = true;
 
-		SpriteRenderer mySprite = transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>();
-
-		while (true) {
-
-			yield return new WaitUntil (() => max_hits >= 5);
-			invincible = true;
-			max_hits = 0;
-
-		
-
+		for (int i = 0; i < 15; i++) {
 			mySprite.enabled = !mySprite.enabled;
-
-
-
-
-
-			invincible = false;
+			yield return new WaitForSeconds (0.1f);
 		}
+
+		mySprite.enabled = true;
+		invincible = false;
 	}
 }

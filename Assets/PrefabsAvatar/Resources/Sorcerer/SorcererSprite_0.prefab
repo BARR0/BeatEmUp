@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magic: {fileID: 1493039655843488, guid: 3087b0c43e8250e4d8308806cbc71c51, type: 2}
   magic2: {fileID: 1358767234388286, guid: 9393c665ade68bd40ab2f288fc54e99c, type: 2}
+  magic3: {fileID: 1770352104593506, guid: 7d40404438a287e4fa53179d672dad25, type: 2}
 --- !u!212 &212132885331329136
 SpriteRenderer:
   m_ObjectHideFlags: 1
