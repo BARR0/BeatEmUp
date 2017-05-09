@@ -72,11 +72,15 @@ public class EnemyMedium : MonoBehaviour {
         
         if (c.gameObject.layer == 9 && !dead)
         {
-			life -= GameController.ApplyDamage (c.transform.root.tag);
-            anim.SetBool("moving", false);
-            source.PlayOneShot(hurt);
-			if (life >= 1)
-            	anim.SetTrigger("hurt");
+            int damageTaken = GameController.ApplyDamage(c.transform.root.tag);
+            if (damageTaken > 0)
+            {
+                life -= damageTaken;
+                anim.SetBool("moving", false);
+                source.PlayOneShot(hurt);
+                if (life >= 1)
+                    anim.SetTrigger("hurt");
+            }
         }
 		if (c.gameObject.layer == 9 && life < 1 && !dead)
 		{
