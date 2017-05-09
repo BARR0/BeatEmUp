@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour {
     private int level;
     private AudioSource source;
 
+	private bool invincible;
+	private SpriteRenderer mySprite;
+
 	private float oldAtk;
 	private float oldAtk2;
 	private float oldAtk3;
@@ -35,6 +38,8 @@ public class PlayerController : MonoBehaviour {
         this.speedMultiplier = 1;
         this.speed = DEFAULT_SPEED;
         this.level = 1;
+		invincible = false;
+		mySprite = transform.GetChild (0).gameObject.GetComponent<SpriteRenderer> ();
 		//this.inputAxis = GameController.controllers [this.prefab];
 		//print(this.prefab.name);
 	}
@@ -88,7 +93,7 @@ public class PlayerController : MonoBehaviour {
             anim.SetTrigger ("atk2");
 		}
 
-		if (atk3== 1 && oldAtk3 == 0 && level >= 3) {
+		if (atk3== 1 && oldAtk3 == 0 && level >= 7) {
             if (clips.Length > 4)
             {
                 source.clip = clips[4];
@@ -111,10 +116,12 @@ public class PlayerController : MonoBehaviour {
 		if (life > 0 && c.gameObject.layer == 11) {
 			life--;
 			source.clip = clips [0];
-			source.Play();
-            ///source.PlayOneShot(hurt, 1);
-			if(!anim.GetCurrentAnimatorStateInfo (0).IsName("hurt"))
-            	anim.SetTrigger ("hurt");
+
+			if (!invincible) {
+				StartCoroutine (invincibility ());
+				source.Play();
+				anim.SetTrigger ("hurt");
+			}
 		}
 		if (life <= 0) {
             //CapsuleCollider playerCol = this.GetComponent<CapsuleCollider> ();
@@ -131,6 +138,7 @@ public class PlayerController : MonoBehaviour {
     public int Level{
         get { return this.level; }
     }
+
 	public void gainLevel(){
 		Vector3 pos = new Vector3 (this.transform.localPosition.x, this.transform.localPosition.y + 30.0f, this.transform.localPosition.z);
 		Instantiate (angelPrefab, pos, angelPrefab.transform.rotation, this.gameObject.transform);
@@ -140,5 +148,17 @@ public class PlayerController : MonoBehaviour {
             source.Play();
         }
 		this.level++;
+	}
+
+	private IEnumerator invincibility() {
+		invincible = true;
+
+		for (int i = 0; i < 15; i++) {
+			mySprite.enabled = !mySprite.enabled;
+			yield return new WaitForSeconds (0.1f);
+		}
+
+		mySprite.enabled = true;
+		invincible = false;
 	}
 }

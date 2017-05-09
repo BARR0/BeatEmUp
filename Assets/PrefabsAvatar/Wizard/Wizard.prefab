@@ -266,7 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magic: {fileID: 1493039655843488, guid: 3087b0c43e8250e4d8308806cbc71c51, type: 2}
   magic2: {fileID: 1358767234388286, guid: 9393c665ade68bd40ab2f288fc54e99c, type: 2}
-  magic3: {fileID: 1635381869480806, guid: 901adc650de7b7846a87cc5f49879a85, type: 2}
+  magic3: {fileID: 1770352104593506, guid: 7d40404438a287e4fa53179d672dad25, type: 2}
 --- !u!136 &136053937565492304
 CapsuleCollider:
   m_ObjectHideFlags: 1
