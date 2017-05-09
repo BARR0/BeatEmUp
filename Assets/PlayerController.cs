@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour {
     public AudioClip[] clips;
 	public GameObject angelPrefab; // GameObject that appears to show that hte player leveled up
 
+	public int dmg1, dmg2, dmg3;
+	public int new_dmg1, new_dmg2, new_dmg3;
+
 	private float speed;
 	private float speedMultiplier; //if we use a speedBoost item
     private int level;
@@ -81,6 +84,7 @@ public class PlayerController : MonoBehaviour {
                 source.clip = clips[2];
                 source.Play();
             }
+			GameController.ChangeDamage (this.tag, dmg1);
 			anim.SetTrigger ("atk");
 		}
 
@@ -90,6 +94,7 @@ public class PlayerController : MonoBehaviour {
                 source.clip = clips[3];
                 source.Play();
             }
+			GameController.ChangeDamage (this.tag, dmg2);
             anim.SetTrigger ("atk2");
 		}
 
@@ -99,8 +104,8 @@ public class PlayerController : MonoBehaviour {
                 source.clip = clips[4];
                 source.Play();
             }
+			GameController.ChangeDamage (this.tag, dmg3);
             anim.SetTrigger ("atk3");
-			Debug.Log ("Attack");
 		}
 
 		anim.SetFloat ("walk", Mathf.Abs(h) + Mathf.Abs(v));
@@ -131,7 +136,7 @@ public class PlayerController : MonoBehaviour {
             anim.SetTrigger ("dead");
 		}
 		if (c.gameObject.tag == "heal") {
-			life++;
+			life += GameController.ApplyDamage ("heal");
 		}
 	}
 

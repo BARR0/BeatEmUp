@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114902864895217750}
   m_Layer: 0
   m_Name: assXSpriteF_0
-  m_TagString: Untagged
+  m_TagString: assassin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 82252614152288072}
   m_Layer: 8
   m_Name: Assassin
-  m_TagString: Player
+  m_TagString: assassin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -281,6 +281,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 901780565e3d0c74dacb131fc81ced2e, type: 3}
   angelPrefab: {fileID: 1826568268202316, guid: d11edec38c2105c448d2ebf2f679427c,
     type: 2}
+  dmg1: 2
+  dmg2: 1
+  dmg3: 2
+  new_dmg1: 5
+  new_dmg2: 2
+  new_dmg3: 5
 --- !u!114 &114449021188025892
 MonoBehaviour:
   m_ObjectHideFlags: 1

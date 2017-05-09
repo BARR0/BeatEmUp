@@ -20,8 +20,11 @@ public class Evolve : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if ( pc.Level > 6 || true) {
+		if ( pc.Level > 6 /*|| true*/) {
 
+			pc.dmg1 = pc.new_dmg1;
+			pc.dmg2 = pc.new_dmg2;
+			pc.dmg3 = pc.new_dmg3;
 			transform.Translate (offsetx, offsety, 0);
 			//GetComponent<Animator> ().runtimeAnimatorController = (RuntimeAnimatorController)newController;
 

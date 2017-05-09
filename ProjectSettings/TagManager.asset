@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Icon
   - heal
+  - knight
+  - gunslinger
+  - wizard
+  - assassin
   layers:
   - Default
   - TransparentFX

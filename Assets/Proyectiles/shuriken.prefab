@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 82499838022897352}
   m_Layer: 9
   m_Name: shuriken
-  m_TagString: Untagged
+  m_TagString: assassin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 1
   sound: {fileID: 0}
+  soundHit: {fileID: 0}
 --- !u!212 &212158982216370812
 SpriteRenderer:
   m_ObjectHideFlags: 1

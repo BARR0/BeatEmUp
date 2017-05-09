@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour {
 
 	public static List<PlayerController> players, dead;
 
+	public static Dictionary<string, int> damage;
+
 	private static double exp;
 
 	public static void gcReset() {
@@ -18,9 +20,15 @@ public class GameController : MonoBehaviour {
 		GameController.controllers = new Dictionary<GameObject, string>();
 		GameController.players = new List<PlayerController> (FindObjectsOfType (typeof(PlayerController)) as PlayerController[]);
 		GameController.dead = new List<PlayerController> ();
+		GameController.damage = new Dictionary<string, int> ();
 //		foreach (PlayerMove pm in players)
 //			print (pm);
 		GameController.exp = 0.0;
+		GameController.damage.Add ("assassin", 0);
+		GameController.damage.Add ("wizard", 0);
+		GameController.damage.Add ("knight", 0);
+		GameController.damage.Add ("gunslinger", 0);
+		GameController.damage.Add ("heal", 1);
 	}
 
 	public static void addPlayer(PlayerController pm){
@@ -59,5 +67,14 @@ public class GameController : MonoBehaviour {
 				pc.gainLevel ();
 			}
 		}
+	}
+
+	public static void ChangeDamage(string player, int damage) {
+		GameController.damage [player] = damage;
+
+	}
+
+	public static int ApplyDamage(string player){
+		return GameController.damage [player];
 	}
 }

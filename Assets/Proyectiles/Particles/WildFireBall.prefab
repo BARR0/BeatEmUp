@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 82164856194356324}
   m_Layer: 9
   m_Name: WildFireBall
-  m_TagString: Untagged
+  m_TagString: wizard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,7 +156,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1358767234388286}
   serializedVersion: 5
   lengthInSec: 0.89
-  simulationSpeed: 1
+  speed: 1
   looping: 1
   prewarm: 1
   playOnAwake: 1

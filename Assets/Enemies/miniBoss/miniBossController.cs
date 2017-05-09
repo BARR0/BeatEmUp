@@ -131,6 +131,14 @@ public class miniBossController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider c)
 	{
+		
+		if(c.gameObject.layer == 9 && !dead)
+		{
+			life -= GameController.ApplyDamage (c.transform.root.tag);
+            source.PlayOneShot(hurt);
+			if (life >= 1)
+            	anim.SetTrigger("hurt");
+		}
 		if (life < 1 && !dead)
 		{
 			cc.enabled = false;
@@ -139,12 +147,6 @@ public class miniBossController : MonoBehaviour {
 			dead = true;
 			GameController.addExp (this.XP);
 			anim.SetTrigger("dead");
-        }
-		else if(c.gameObject.layer == 9 && !dead)
-		{
-            life--;
-            source.PlayOneShot(hurt);
-            anim.SetTrigger("hurt");
 		}
 
 	}

@@ -55,7 +55,7 @@ public class UILogic2 : MonoBehaviour {
 		h[2] = Input.GetAxis ("Horizontal3");
 		h[3] = Input.GetAxis ("Horizontal4");
 
-		print (h[0] + h[1] + h[2] + h[3]);
+		//print (h[0] + h[1] + h[2] + h[3]);
 
 		for(int i = 0; i < n; ++i){
 			if (( Mathf.Ceil( h [i] ) == 1 ) && (oldh [i] <= 0) && (p[i] < n )) {

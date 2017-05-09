@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 114196208504446784}
   m_Layer: 0
   m_Name: gunslingerF_0
-  m_TagString: Untagged
+  m_TagString: gunslinger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 82245523043728630}
   m_Layer: 8
   m_Name: Gunslinger
-  m_TagString: Untagged
+  m_TagString: gunslinger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,6 +267,12 @@ MonoBehaviour:
   - {fileID: 0}
   angelPrefab: {fileID: 1826568268202316, guid: d11edec38c2105c448d2ebf2f679427c,
     type: 2}
+  dmg1: 1
+  dmg2: 1
+  dmg3: 1
+  new_dmg1: 3
+  new_dmg2: 3
+  new_dmg3: 2
 --- !u!114 &114196208504446784
 MonoBehaviour:
   m_ObjectHideFlags: 1

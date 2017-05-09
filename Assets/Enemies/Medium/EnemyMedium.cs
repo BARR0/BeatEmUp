@@ -69,21 +69,22 @@ public class EnemyMedium : MonoBehaviour {
 
     void OnTriggerEnter(Collider c)
     {
-        if (c.gameObject.layer == 9 && life < 2 && !dead)
+        
+        if (c.gameObject.layer == 9 && !dead)
         {
-            dead = true;
-			GameController.addExp (this.XP);
-            anim.SetTrigger("dead");
-            StartCoroutine(WhenNotDestroyed());
-        }
-        else if (c.gameObject.layer == 9 && !dead)
-        {
-            life--;
+			life -= GameController.ApplyDamage (c.transform.root.tag);
             anim.SetBool("moving", false);
             source.PlayOneShot(hurt);
-            anim.SetTrigger("hurt");
-            
+			if (life >= 1)
+            	anim.SetTrigger("hurt");
         }
+		if (c.gameObject.layer == 9 && life < 1 && !dead)
+		{
+			dead = true;
+			GameController.addExp (this.XP);
+			anim.SetTrigger("dead");
+			StartCoroutine(WhenNotDestroyed());
+		}
 
     }
 

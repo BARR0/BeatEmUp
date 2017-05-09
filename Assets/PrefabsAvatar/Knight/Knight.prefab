@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 82101390958826796}
   m_Layer: 8
   m_Name: Knight
-  m_TagString: Untagged
+  m_TagString: knight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 114716893548506268}
   m_Layer: 0
   m_Name: knightsprites_0
-  m_TagString: Untagged
+  m_TagString: knight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -323,6 +323,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8da33c7aaf62f634997acadb0d1141e7, type: 3}
   angelPrefab: {fileID: 1826568268202316, guid: d11edec38c2105c448d2ebf2f679427c,
     type: 2}
+  dmg1: 2
+  dmg2: 1
+  dmg3: 2
+  new_dmg1: 10
+  new_dmg2: 3
+  new_dmg3: 15
 --- !u!114 &114482215836357726
 MonoBehaviour:
   m_ObjectHideFlags: 1
