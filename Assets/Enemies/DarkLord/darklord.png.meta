@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 86972a78caeddbc4f8a67fe6fedd761a
-timeCreated: 1494278956
+timeCreated: 1494288754
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -33,6 +33,10 @@ TextureImporter:
     21300052: darklord_26
     21300054: darklord_27
     21300056: darklord_28
+    21300058: darklord_29
+    21300060: darklord_30
+    21300062: darklord_31
+    21300064: darklord_32
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -470,6 +474,58 @@ TextureImporter:
         y: 574
         width: 90
         height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_29
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 476
+        width: 64
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_30
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 477
+        width: 71
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_31
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 472
+        width: 76
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darklord_32
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 467
+        width: 63
+        height: 231
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
