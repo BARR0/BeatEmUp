@@ -12,8 +12,15 @@ public class SetArena : MonoBehaviour {
 	private bool isActive;
 	public int enemysToKill;
 
+	private Vector3 start1, start2;
+	private float arenaPos1, arenaPos2;
+
 	// Use this for initialization
 	void Start () {
+		arenaPos1 = this.transform.position.x - 2.5f;
+		arenaPos2 = this.transform.position.x + 2.5f;
+		start1 = new Vector3 (this.transform.position.x - 25.5f, this.transform.position.y, this.transform.position.z);
+		start2 = new Vector3 (this.transform.position.x + 25.5f, this.transform.position.y, this.transform.position.z);
 		isActive = false;
 		wall1 = null;
 		wall2 = null;
@@ -23,6 +30,16 @@ public class SetArena : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		if(start1.x < arenaPos1){
+			start1.x += 1f;
+			wall1.transform.Translate(new Vector3(1f, 0, 0));
+		}
+
+		if(start2.x > arenaPos2){
+			start1.x -= 1f;
+			wall2.transform.Translate(new Vector3(-1f, 0, 0));
+		}
 
 		if (enemysToKill < 1) {
 
@@ -38,10 +55,10 @@ public class SetArena : MonoBehaviour {
 		if (c.gameObject.layer == 8 && !isActive) {
 			
 			isActive = !isActive;
-			Vector3 arenaPos1 = new Vector3 (this.transform.position.x - 2.5f, this.transform.position.y, this.transform.position.z);
-			Vector3 arenaPos2 = new Vector3 (this.transform.position.x + 2.5f, this.transform.position.y, this.transform.position.z);
-			wall1 = Instantiate ( arenaWall, arenaPos1, arenaWall.transform.rotation );
-			wall2 = Instantiate ( arenaWall, arenaPos2, arenaWall.transform.rotation );
+			// Vector3 arenaPos1 = new Vector3 (this.transform.position.x - 2.5f, this.transform.position.y, this.transform.position.z);
+			// Vector3 arenaPos2 = new Vector3 (this.transform.position.x + 2.5f, this.transform.position.y, this.transform.position.z);
+			wall1 = Instantiate ( arenaWall, start1, arenaWall.transform.rotation );
+			wall2 = Instantiate ( arenaWall, start2, arenaWall.transform.rotation );
 
 
 			spawnPoint [0] = new Vector3 (this.transform.position.x - 3.0f, this.transform.position.y, this.transform.position.z + 2.5f);
