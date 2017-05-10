@@ -55,8 +55,8 @@ GameObject:
   - component: {fileID: 4030317405210448}
   - component: {fileID: 54796534447636224}
   - component: {fileID: 136629554260152752}
-  - component: {fileID: 114381212634673112}
   - component: {fileID: 82233439737146970}
+  - component: {fileID: 114808775165741932}
   m_Layer: 10
   m_Name: DarkLord
   m_TagString: 2
@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1853270360286848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7703111, y: -5.64, z: -3.6}
+  m_LocalPosition: {x: 152.99991, y: -4.7423024, z: -6.9625635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4190323062684070}
@@ -228,23 +228,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b9569ef5dcbff04986c46429213e6ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114381212634673112
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1853270360286848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcf253810009fa6418aefd1d9b9d3915, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 5000
-  XP: 1
-  anim: {fileID: 95986726337400378}
-  defaultSpeed: 0.7
-  attackDistance: 6
-  hurt: {fileID: 8300000, guid: 6c94ba5e437ac1d4797a00fe93083188, type: 3}
 --- !u!114 &114634632399078658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -257,6 +240,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invocable: {fileID: 1335102220684828, guid: 10f08bfb473abf64fada49080ad59aa1, type: 2}
+--- !u!114 &114808775165741932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1853270360286848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6e0319d752a3c94093ba8e26e14b12e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 10000
+  XP: 0
+  anim: {fileID: 95986726337400378}
+  defaultSpeed: 1
+  attackDistance: 6
+  cameraWithController: {fileID: 0}
+  hurt: {fileID: 8300000, guid: 6c94ba5e437ac1d4797a00fe93083188, type: 3}
 --- !u!136 &136629554260152752
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -25,11 +25,11 @@ public class aimer : MonoBehaviour {
         {
             if (GameController.players.Count <= 0) break;
             PlayerController dummy = GameController.players[0];
-            float mindist = dummy.life;
+            //float mindist = dummy.life;
 
-            int number = Random.Range(0,10);
+            int number = Random.Range(0,GameController.players.Count);
 
-            target = GameController.players[number % GameController.players.Count].transform;
+            target = GameController.players[number].transform;
 
             yield return new WaitForSeconds(1);
         }

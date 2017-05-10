@@ -9,11 +9,14 @@ public class darklordbehaviour : MonoBehaviour {
     public Animator anim;
     public float defaultSpeed;
     public double attackDistance;
+    public Camera cameraWithController;
     public AudioClip hurt;
 
+    private double musicDistance;
     private Transform enemySprite;
     private Transform target;
     private bool dead;
+    private bool musicOn;
     private AudioSource source;
 
     void Awake()
@@ -23,6 +26,8 @@ public class darklordbehaviour : MonoBehaviour {
 
     void Start()
     {
+        musicOn = false;
+        musicDistance = 7;
         enemySprite = transform.GetChild(0);
         //life = 10;
 
@@ -38,7 +43,7 @@ public class darklordbehaviour : MonoBehaviour {
     {
 
         AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo(0);
-        Debug.Log(life);
+        //Debug.Log(life);
 		if (target == null)
 			return;
         Vector3 movement = (target.position - this.transform.position).normalized * Time.deltaTime * defaultSpeed;
@@ -50,6 +55,12 @@ public class darklordbehaviour : MonoBehaviour {
         if (movement.x < 0)
         {
             enemySprite.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+
+        if(musicDistance >= Mathf.Abs(Vector3.Distance(this.transform.position, target.position)) && !musicOn)
+        {
+            cameraWithController.GetComponent<Level3Controller>().BossEncounter();
+            musicOn = true;
         }
 
         if (!currentState.IsName("atk") && !currentState.IsName("hurt") && attackDistance < Mathf.Abs(Vector3.Distance(this.transform.position, target.position)) && !dead)
