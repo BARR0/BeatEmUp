@@ -34,7 +34,7 @@ public class HealthBar : MonoBehaviour {
             Destroy(gameObject);
             return;
         }
-        slider.maxValue = player.life;
+        slider.maxValue = player.maxlife;
         //Debug.Log(player.inputAxis + " " + player.life + " " + player.Level);
         slider.minValue = 0;
         text.text = "Player " + player.inputAxis + " Level " + (player.Level);

@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour {
 	public Animator anim;
 	public Transform sprite;
     public string inputAxis;
-	public int life;
+	public int life, maxlife;
     public AudioClip[] clips;
 	public GameObject angelPrefab; // GameObject that appears to show that hte player leveled up
 
@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+		this.maxlife = this.life;
         this.oldAtk = 0;
         this.oldAtk2 = 0;
         this.oldAtk3 = 0;
@@ -139,6 +140,8 @@ public class PlayerController : MonoBehaviour {
 		}
 		if (c.gameObject.tag == "heal") {
 			life += GameController.ApplyDamage ("heal");
+			if (this.life > this.maxlife)
+				this.life = this.maxlife;
 		}
 	}
 
