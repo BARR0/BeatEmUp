@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class darklordbehaviour : MonoBehaviour {
 
@@ -95,6 +96,7 @@ public class darklordbehaviour : MonoBehaviour {
         }
 		if (c.gameObject.layer == 9 && life < 1 && !dead)
 		{
+			StartCoroutine (WhenDestroyed ());
 			dead = true;
 			GameController.addExp (this.XP);
 			anim.SetTrigger("dead");
@@ -134,4 +136,11 @@ public class darklordbehaviour : MonoBehaviour {
         yield return new WaitForSeconds(1);
         Destroy(this.gameObject);
     }
+	IEnumerator WhenDestroyed()
+	{
+
+		yield return new WaitForSeconds(6f);
+		SceneManager.LoadScene("Game Over");
+		//Destroy(this.gameObject);
+	}
 }

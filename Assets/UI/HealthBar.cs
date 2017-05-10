@@ -42,6 +42,7 @@ public class HealthBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		slider.maxValue = player.maxlife;
         slider.value = player.life;
         text.text = "Player " + player.inputAxis + " Level " + (player.Level);
     }

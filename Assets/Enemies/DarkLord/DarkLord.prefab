@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6e0319d752a3c94093ba8e26e14b12e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 10000
+  life: 5000
   XP: 0
   anim: {fileID: 95986726337400378}
   defaultSpeed: 1
