@@ -10,9 +10,13 @@ public class Castable : MonoBehaviour {
 	private Transform spot;
 	private PlayerController par;
 	private bool flag;
+	private int maxHeal;
+	private int currentHeals;
 
 	// Use this for initialization
 	void Start () {
+		maxHeal = 3;
+		currentHeals = 0;
 		spot = transform.GetChild(0);
 		par = this.transform.parent.GetComponent<PlayerController> ();
 		flag = true;
@@ -37,13 +41,23 @@ public class Castable : MonoBehaviour {
 			StartCoroutine (heal ());
 			flag = false;
 		}
-		Instantiate(magic3, spot.transform.position, transform.rotation);
+
+		if (currentHeals < maxHeal) {
+			currentHeals++;
+			Instantiate(magic3, spot.transform.position, transform.rotation);
+			StartCoroutine (healings ());
+		}
 	}
 
 	IEnumerator heal(){
 		while (true) {
 			par.life++;
-			yield return new WaitForSeconds(5f);
+			yield return new WaitForSeconds(4f);
 		}
+	}
+
+	IEnumerator healings() {
+		yield return new WaitForSeconds (5.5f);
+		currentHeals--;
 	}
 }

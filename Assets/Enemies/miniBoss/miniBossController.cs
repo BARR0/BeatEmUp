@@ -27,6 +27,7 @@ public class miniBossController : MonoBehaviour {
 	private CapsuleCollider cc;
 
 	private bool invincible;
+	private SpriteRenderer mySprite;
 
     void Awake()
     {
@@ -34,6 +35,7 @@ public class miniBossController : MonoBehaviour {
     }
 	// Use this for initialization
 	void Start () {
+		mySprite = transform.GetChild (0).gameObject.GetComponent<SpriteRenderer> ();
 		invincible = false;
 		cc = GetComponent<CapsuleCollider> ();
 
@@ -134,6 +136,8 @@ public class miniBossController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider c)
 	{
+		if (dead)
+			return;
 		
 		if(c.gameObject.layer == 9 && !dead)
 		{
@@ -148,7 +152,7 @@ public class miniBossController : MonoBehaviour {
 		}
 		if (life < 1 && !dead)
 		{
-			cc.enabled = false;
+			//cc.enabled = false;
 			StartCoroutine(WhenDestroyed());	
 			Destroy (currentBehavior);
 			dead = true;
@@ -182,7 +186,7 @@ public class miniBossController : MonoBehaviour {
 
     IEnumerator WhenDestroyed()
     {
-		
+		mySprite.enabled = false;
         yield return new WaitForSeconds(6f);
         SceneManager.LoadScene("Level3Scene");
         //Destroy(this.gameObject);
