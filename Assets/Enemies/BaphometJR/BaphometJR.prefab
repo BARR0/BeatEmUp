@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 82708391928416492}
   m_Layer: 10
   m_Name: BaphometJR
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 114393531490006328}
   m_Layer: 10
   m_Name: BaphometJR_Idle1
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

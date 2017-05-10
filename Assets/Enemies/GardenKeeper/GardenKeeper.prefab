@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 82950267118581296}
   m_Layer: 10
   m_Name: GardenKeeper
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 114146795465493282}
   m_Layer: 0
   m_Name: GardenKeeper_0
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
