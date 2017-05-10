@@ -37,6 +37,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4058323159772836}
+  - component: {fileID: 114050086944262006}
   m_Layer: 0
   m_Name: spot
   m_TagString: Untagged
@@ -83,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1580767220949110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.786, y: 0, z: 0}
+  m_LocalPosition: {x: -0.786, y: -0.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4190323062684070}
@@ -135,6 +136,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114050086944262006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1580767220949110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b9569ef5dcbff04986c46429213e6ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114381212634673112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf253810009fa6418aefd1d9b9d3915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 10
   XP: 0
   anim: {fileID: 95986726337400378}
   defaultSpeed: 1
@@ -163,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c95619cc06d6644b749c5734ae4a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invocable: {fileID: 1273414054526460, guid: 10f08bfb473abf64fada49080ad59aa1, type: 2}
+  invocable: {fileID: 1335102220684828, guid: 10f08bfb473abf64fada49080ad59aa1, type: 2}
 --- !u!136 &136629554260152752
 CapsuleCollider:
   m_ObjectHideFlags: 1
