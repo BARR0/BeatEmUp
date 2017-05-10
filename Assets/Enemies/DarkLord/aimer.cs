@@ -27,22 +27,9 @@ public class aimer : MonoBehaviour {
             PlayerController dummy = GameController.players[0];
             float mindist = dummy.life;
 
-            foreach (PlayerController go in GameController.players)
-            {
+            int number = Random.Range(0,10);
 
-                float distDummy = go.life;
-
-                //Iterates through players to find the shortest one
-                if (distDummy < mindist)
-                {
-
-                    mindist = distDummy;
-                    dummy = go;
-                }
-
-            }
-
-            target = dummy.transform;
+            target = GameController.players[number % GameController.players.Count].transform;
 
             yield return new WaitForSeconds(1);
         }

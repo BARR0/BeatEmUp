@@ -20,13 +20,4 @@ public class DarkLordProyectil : MonoBehaviour {
 	void OnBecameInvisible() {
 		Destroy (this.gameObject);
 	}
-
-    void OnTriggerEnter(Collider c)
-    {
-        if(c.gameObject.layer == 8)
-        {
-            PlayerController pc = c.GetComponent<PlayerController>();
-            pc.life -= 10;
-        }
-    }
 }
