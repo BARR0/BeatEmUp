@@ -177,7 +177,7 @@ public class miniBossController : MonoBehaviour {
     {
 		
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene("Game Over");
+        SceneManager.LoadScene("Level3Scene");
         //Destroy(this.gameObject);
     }
 }
