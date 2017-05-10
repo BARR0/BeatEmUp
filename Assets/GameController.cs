@@ -77,4 +77,15 @@ public class GameController : MonoBehaviour {
 	public static int ApplyDamage(string player){
 		return GameController.damage [player];
 	}
+
+	public static void ReviveDead(){
+		if (GameController.dead == null)
+			return;
+		foreach(PlayerController pc in GameController.dead){
+			GameController.dead.Remove (pc);
+			var clone = Instantiate (pc);
+			GameController.players.Add (clone);
+		}
+	}
+
 }

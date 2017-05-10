@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 	public const float DEFAULT_SPEED = 2;
 
-	public GameObject prefab;
+	public GameObject prefab, corpse;
 	public Animator anim;
 	public Transform sprite;
     public string inputAxis;
@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 		if (this.life <= 0) {
 			GameController.removePlayer (this);
+			Instantiate (this.corpse, this.transform.position, this.corpse.transform.rotation);
 			Destroy (this.gameObject);
 		}
 
