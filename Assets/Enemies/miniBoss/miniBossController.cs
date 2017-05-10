@@ -26,12 +26,15 @@ public class miniBossController : MonoBehaviour {
 	private bool dead;
 	private CapsuleCollider cc;
 
+	private bool invincible;
+
     void Awake()
     {
         source = GetComponent<AudioSource>();
     }
 	// Use this for initialization
 	void Start () {
+		invincible = false;
 		cc = GetComponent<CapsuleCollider> ();
 
 		midclose = new Symbol ("midclose");
@@ -135,9 +138,13 @@ public class miniBossController : MonoBehaviour {
 		if(c.gameObject.layer == 9 && !dead)
 		{
 			life -= GameController.ApplyDamage (c.transform.root.tag);
-            source.PlayOneShot(hurt);
-			if (life >= 1)
-            	anim.SetTrigger("hurt");
+
+			if (!invincible && life >= 1) {
+				StartCoroutine (invincibility ());
+				source.PlayOneShot(hurt);
+				anim.SetTrigger ("hurt");
+			}
+
 		}
 		if (life < 1 && !dead)
 		{
@@ -180,4 +187,12 @@ public class miniBossController : MonoBehaviour {
         SceneManager.LoadScene("Level3Scene");
         //Destroy(this.gameObject);
     }
+
+	private IEnumerator invincibility() {
+		invincible = true;
+
+		yield return new WaitForSeconds (5f);
+
+		invincible = false;
+	}
 }

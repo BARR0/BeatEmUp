@@ -16,6 +16,8 @@ public class EnemyMedium : MonoBehaviour {
     private bool dead;
     private AudioSource source;
 
+	private bool invincible;
+
     void Awake()
     {
     	source = GetComponent<AudioSource>();
@@ -23,6 +25,7 @@ public class EnemyMedium : MonoBehaviour {
 
     void Start()
     {
+		invincible = false;
         enemySprite = transform.GetChild(0);
         //life = 10;
 
@@ -76,10 +79,13 @@ public class EnemyMedium : MonoBehaviour {
             if (damageTaken > 0)
             {
                 life -= damageTaken;
-                anim.SetBool("moving", false);
-                source.PlayOneShot(hurt);
-                if (life >= 1)
-                    anim.SetTrigger("hurt");
+				source.PlayOneShot(hurt);
+
+				if (!invincible && life >= 1) {
+					anim.SetBool("moving", false);
+					StartCoroutine (invincibility ());
+					anim.SetTrigger ("hurt");
+				}
             }
         }
 		if (c.gameObject.layer == 9 && life < 1 && !dead)
@@ -97,11 +103,11 @@ public class EnemyMedium : MonoBehaviour {
 		while (true) {
 			if(GameController.players.Count <= 0) break;
 			PlayerController dummy = GameController.players [0];
-			float mindist = dummy.life;
+			float mindist = dummy.life / (float) dummy.maxlife;
 
 			foreach (PlayerController go in GameController.players) {
 
-				float distDummy = go.life;
+				float distDummy = go.life / (float) go.maxlife;
 
 				//Iterates through players to find the shortest one
 				if ( distDummy < mindist) {
@@ -123,4 +129,11 @@ public class EnemyMedium : MonoBehaviour {
         yield return new WaitForSeconds(1);
         Destroy(this.gameObject);
     }
+	private IEnumerator invincibility() {
+		invincible = true;
+
+		yield return new WaitForSeconds (2f);
+
+		invincible = false;
+	}
 }

@@ -108,11 +108,11 @@ public class darklordbehaviour : MonoBehaviour {
 		while (true) {
 			if(GameController.players.Count <= 0) break;
 			PlayerController dummy = GameController.players [0];
-			float mindist = dummy.life;
+			float mindist = dummy.life / (float) dummy.maxlife;
 
 			foreach (PlayerController go in GameController.players) {
 
-				float distDummy = go.life;
+				float distDummy = go.life / (float) go.maxlife;
 
 				//Iterates through players to find the shortest one
 				if ( distDummy < mindist) {

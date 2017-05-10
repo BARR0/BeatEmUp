@@ -31,15 +31,15 @@ public class SetArena : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if(start1.x < arenaPos1){
-			start1.x += 1f;
-			wall1.transform.Translate(new Vector3(1f, 0, 0));
-		}
-
-		if(start2.x > arenaPos2){
-			start1.x -= 1f;
-			wall2.transform.Translate(new Vector3(-1f, 0, 0));
-		}
+//		if(wall1 != null && start1.x < arenaPos1){
+//			start1.x += 10f;
+//			wall1.transform.Translate(new Vector3(10f, 0, 0), Space.World);
+//		}
+//
+//		if(wall2 != null && start2.x > arenaPos2){
+//			start1.x -= 10f;
+//			wall2.transform.Translate(new Vector3(-10f, 0, 0), Space.World);
+//		}
 
 		if (enemysToKill < 1) {
 
@@ -55,19 +55,24 @@ public class SetArena : MonoBehaviour {
 		if (c.gameObject.layer == 8 && !isActive) {
 			
 			isActive = !isActive;
-			// Vector3 arenaPos1 = new Vector3 (this.transform.position.x - 2.5f, this.transform.position.y, this.transform.position.z);
-			// Vector3 arenaPos2 = new Vector3 (this.transform.position.x + 2.5f, this.transform.position.y, this.transform.position.z);
+
+			arenaPos1 = this.transform.position.x - 2.5f;
+			arenaPos2 = this.transform.position.x + 2.5f;
+
+			start1 = new Vector3 (this.transform.position.x - 5.5f, this.transform.position.y, this.transform.position.z);
+			start2 = new Vector3 (this.transform.position.x + 5.5f, this.transform.position.y, this.transform.position.z);
 			wall1 = Instantiate ( arenaWall, start1, arenaWall.transform.rotation );
 			wall2 = Instantiate ( arenaWall, start2, arenaWall.transform.rotation );
+			//wall1.transform.Translate (new Vector3(20f, 0, 0), Space.World);
+			//wall2.transform.Translate (new Vector3(-20f, 0, 0), Space.World);
 
+			spawnPoint [0] = new Vector3 (this.transform.position.x - 10.0f, this.transform.position.y, this.transform.position.z + 2.5f);
+			spawnPoint [1] = new Vector3 (this.transform.position.x - 10.0f, this.transform.position.y, this.transform.position.z );
+			spawnPoint [2] = new Vector3 (this.transform.position.x - 10.0f, this.transform.position.y, this.transform.position.z - 2.5f);
 
-			spawnPoint [0] = new Vector3 (this.transform.position.x - 3.0f, this.transform.position.y, this.transform.position.z + 2.5f);
-			spawnPoint [1] = new Vector3 (this.transform.position.x - 3.0f, this.transform.position.y, this.transform.position.z );
-			spawnPoint [2] = new Vector3 (this.transform.position.x - 3.0f, this.transform.position.y, this.transform.position.z - 2.5f);
-
-			spawnPoint [3] = new Vector3 (this.transform.position.x + 3.0f, this.transform.position.y, this.transform.position.z + 2.5f);
-			spawnPoint [4] = new Vector3 (this.transform.position.x + 3.0f, this.transform.position.y, this.transform.position.z);
-			spawnPoint [5] = new Vector3 (this.transform.position.x + 3.0f, this.transform.position.y, this.transform.position.z - 2.5f);
+			spawnPoint [3] = new Vector3 (this.transform.position.x + 10.0f, this.transform.position.y, this.transform.position.z + 2.5f);
+			spawnPoint [4] = new Vector3 (this.transform.position.x + 10.0f, this.transform.position.y, this.transform.position.z);
+			spawnPoint [5] = new Vector3 (this.transform.position.x + 10.0f, this.transform.position.y, this.transform.position.z - 2.5f);
 
 
 			StartCoroutine (SpawnEnemy());
