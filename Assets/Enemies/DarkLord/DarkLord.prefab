@@ -150,7 +150,7 @@ MonoBehaviour:
   XP: 0
   anim: {fileID: 95986726337400378}
   defaultSpeed: 1
-  attackDistance: 4
+  attackDistance: 10
   hurt: {fileID: 0}
 --- !u!114 &114634632399078658
 MonoBehaviour:
