@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 82133868111710194}
   - component: {fileID: 114943658712577250}
   - component: {fileID: 65767324927160100}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: HealingWind
   m_TagString: heal
   m_Icon: {fileID: 0}

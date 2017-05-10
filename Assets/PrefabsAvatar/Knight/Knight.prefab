@@ -327,9 +327,9 @@ MonoBehaviour:
   dmg1: 2
   dmg2: 1
   dmg3: 2
-  new_dmg1: 10
+  new_dmg1: 20
   new_dmg2: 3
-  new_dmg3: 15
+  new_dmg3: 30
 --- !u!114 &114482215836357726
 MonoBehaviour:
   m_ObjectHideFlags: 1

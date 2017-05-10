@@ -243,7 +243,7 @@ MonoBehaviour:
   dmg2: 7
   dmg3: 2
   new_dmg1: 8
-  new_dmg2: 15
+  new_dmg2: 10
   new_dmg3: 2
 --- !u!114 &114383385017991366
 MonoBehaviour:
