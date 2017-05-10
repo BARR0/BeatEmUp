@@ -25,6 +25,9 @@ public class Evolve : MonoBehaviour {
 			pc.dmg1 = pc.new_dmg1;
 			pc.dmg2 = pc.new_dmg2;
 			pc.dmg3 = pc.new_dmg3;
+			GameController.ChangeDamage ("heal", 6);
+			pc.maxlife *= 2;
+			pc.life = pc.maxlife;
 			transform.Translate (offsetx, offsety, 0);
 			//GetComponent<Animator> ().runtimeAnimatorController = (RuntimeAnimatorController)newController;
 
