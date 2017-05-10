@@ -110,11 +110,11 @@ AnimationClip:
       - serializedVersion: 2
         time: 1.7777778
         value: {x: 0, y: -1.6, z: 0}
-        inSlope: {x: 0, y: -0.9000003, z: 0}
-        outSlope: {x: 0, y: -0.9000003, z: 0}
+        inSlope: {x: 0, y: -0.058064528, z: 0}
+        outSlope: {x: 0, y: -0.058064528, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 1.8888888
+        time: 5.111111
         value: {x: 0, y: -1.7, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -165,7 +165,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.8888888
+    m_StopTime: 5.111111
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -281,7 +281,7 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.8888888
+        time: 5.111111
         value: 0
         inSlope: 0
         outSlope: 0
@@ -389,11 +389,11 @@ AnimationClip:
       - serializedVersion: 2
         time: 1.7777778
         value: -1.6
-        inSlope: -0.9000003
-        outSlope: -0.9000003
+        inSlope: -0.058064528
+        outSlope: -0.058064528
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.8888888
+        time: 5.111111
         value: -1.7
         inSlope: 0
         outSlope: 0
@@ -505,7 +505,7 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.8888888
+        time: 5.111111
         value: 0
         inSlope: 0
         outSlope: 0
@@ -523,7 +523,7 @@ AnimationClip:
   m_GenerateMotionCurves: 0
   m_IsEmpty: 0
   m_Events:
-  - time: 1.8888888
+  - time: 1.6666666
     functionName: disappear
     data: 
     objectReferenceParameter: {fileID: 0}
