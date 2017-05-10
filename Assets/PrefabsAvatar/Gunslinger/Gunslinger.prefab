@@ -258,6 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1826325095291048}
+  corpse: {fileID: 1289346304876380, guid: 77ef5eb3447d8344aad9e7b56c9f279d, type: 2}
   anim: {fileID: 95748623035840704}
   sprite: {fileID: 4976912796817028}
   inputAxis: 
