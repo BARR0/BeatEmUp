@@ -120,7 +120,8 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter (Collider c) {
 		if (life > 0 && c.gameObject.layer == 11) {
-			life--;
+			int damage = int.Parse (c.transform.root.tag);
+			life -= damage;
 			source.clip = clips [0];
 
 			if (!invincible) {

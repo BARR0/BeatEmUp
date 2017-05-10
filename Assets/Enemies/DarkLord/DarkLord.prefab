@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 114381212634673112}
   m_Layer: 10
   m_Name: DarkLord
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
