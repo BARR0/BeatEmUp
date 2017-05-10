@@ -31,11 +31,12 @@ public class PlayerController : MonoBehaviour {
 	void Awake(){
 		GameController.addPlayer (this);
         source = GetComponent<AudioSource>();
+		this.maxlife = this.life;
     }
 
     // Use this for initialization
     void Start() {
-		this.maxlife = this.life;
+		
         this.oldAtk = 0;
         this.oldAtk2 = 0;
         this.oldAtk3 = 0;

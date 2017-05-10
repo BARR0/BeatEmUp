@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour {
 		GameController.damage.Add ("wizard", 0);
 		GameController.damage.Add ("knight", 0);
 		GameController.damage.Add ("gunslinger", 0);
-		GameController.damage.Add ("heal", 1);
+		GameController.damage.Add ("heal", 3);
 	}
 
 	public static void addPlayer(PlayerController pm){
