@@ -75,8 +75,8 @@ public class GameController : MonoBehaviour {
 			return;
 		foreach(PlayerController pc in GameController.dead){
 			GameController.dead.Remove (pc);
-			var clone = Instantiate (pc);
-			GameController.players.Add (clone);
+			var clone = Instantiate (pc.gameObject);
+			GameController.players.Add (clone.GetComponent<PlayerController>());
 		}
 	}
 
