@@ -24,6 +24,7 @@ public class Level3Controller : MonoBehaviour {
 	{
 
 		backgroundmusic.clip = clips [0];
+		backgroundmusic.loop = true;
 		backgroundmusic.Play();
 	}
 
@@ -42,6 +43,7 @@ public class Level3Controller : MonoBehaviour {
 	public void BossEncounter() 
 	{
 		backgroundmusic.clip = clips [1];
+		backgroundmusic.loop = true;
 		backgroundmusic.Play();
 	}
 }
