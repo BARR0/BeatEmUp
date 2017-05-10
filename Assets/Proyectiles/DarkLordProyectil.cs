@@ -5,10 +5,18 @@ using UnityEngine;
 public class DarkLordProyectil : MonoBehaviour {
 	private Rigidbody rb;
     private Transform pivotPosition;
+    private AudioSource source;
+
 	public float force;
+    public AudioClip sound;
 
 	// Use this for initialization
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 	void Start () {
+        source.PlayOneShot(sound);
         Destroy(gameObject, 10);
 	}
 
