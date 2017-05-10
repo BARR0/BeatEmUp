@@ -13,6 +13,7 @@ public class Level2Controller : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
+		GameController.ReviveDead ();
         int counter = 0;
 		foreach (PlayerController pc in GameController.players) {
 			pc.transform.position = spawn [counter++];

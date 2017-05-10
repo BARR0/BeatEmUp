@@ -51,14 +51,6 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
-	public static void ReviveAll(){
-		foreach(PlayerController pc in dead){
-			GameController.players.Add (pc);
-			GameController.dead.Remove (pc);
-			Instantiate (pc);
-		}
-	}
-
 	public static void addExp(double moreexp){
 		GameController.exp += moreexp;
 		if (GameController.exp >= 1.0) {
