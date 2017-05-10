@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DarkLordProyectil : MonoBehaviour {
 	private Rigidbody rb;
+    private Transform pivotPosition;
 	public float force;
 
 	// Use this for initialization
@@ -13,7 +14,7 @@ public class DarkLordProyectil : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(-5*Time.deltaTime*force,0,0);
+        transform.Translate(0,0, 5 * Time.deltaTime * force);
 	}
 
 	void OnBecameInvisible() {

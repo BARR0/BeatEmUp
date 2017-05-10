@@ -12,7 +12,11 @@ public class aimer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.LookAt(target.position);
+        if (GameController.players.Count > 0)
+        {
+            this.transform.LookAt(target.position);
+        }
+        
 	}
     IEnumerator FindClosestTarget()
     {

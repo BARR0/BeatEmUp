@@ -52,14 +52,14 @@ public class EnemyMedium : MonoBehaviour {
             enemySprite.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        if (!currentState.IsName("atk") && attackDistance < Mathf.Abs(Vector3.Distance(this.transform.position, target.position)) && !dead)
+        if (!currentState.IsName("atk") && !currentState.IsName("hurt") && attackDistance < Mathf.Abs(Vector3.Distance(this.transform.position, target.position)) && !dead)
         {
 
             anim.SetBool("moving", true);
             this.transform.Translate(movement);
 
         }
-        if (!currentState.IsName("atk") && attackDistance >= Mathf.Abs(Vector3.Distance(this.transform.position, target.position)) && !dead)
+        if (!currentState.IsName("atk") && !currentState.IsName("hurt") && attackDistance >= Mathf.Abs(Vector3.Distance(this.transform.position, target.position)) && !dead)
         {
 
             anim.SetBool("moving", false);
