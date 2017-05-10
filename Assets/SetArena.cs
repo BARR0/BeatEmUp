@@ -13,12 +13,12 @@ public class SetArena : MonoBehaviour {
 	public int enemysToKill;
 
 	private Vector3 start1, start2;
-	private float arenaPos1, arenaPos2;
+	//private float arenaPos1, arenaPos2;
 
 	// Use this for initialization
 	void Start () {
-		arenaPos1 = this.transform.position.x - 2.5f;
-		arenaPos2 = this.transform.position.x + 2.5f;
+		//arenaPos1 = this.transform.position.x - 2.5f;
+		//arenaPos2 = this.transform.position.x + 2.5f;
 		start1 = new Vector3 (this.transform.position.x - 25.5f, this.transform.position.y, this.transform.position.z);
 		start2 = new Vector3 (this.transform.position.x + 25.5f, this.transform.position.y, this.transform.position.z);
 		isActive = false;
@@ -46,6 +46,7 @@ public class SetArena : MonoBehaviour {
 			Destroy (wall1);
 			Destroy (wall2);
 			Destroy (this.gameObject);
+
 		}
 	}
 
@@ -56,8 +57,8 @@ public class SetArena : MonoBehaviour {
 			
 			isActive = !isActive;
 
-			arenaPos1 = this.transform.position.x - 2.5f;
-			arenaPos2 = this.transform.position.x + 2.5f;
+			//arenaPos1 = this.transform.position.x - 2.5f;
+			//arenaPos2 = this.transform.position.x + 2.5f;
 
 			start1 = new Vector3 (this.transform.position.x - 5.5f, this.transform.position.y, this.transform.position.z);
 			start2 = new Vector3 (this.transform.position.x + 5.5f, this.transform.position.y, this.transform.position.z);

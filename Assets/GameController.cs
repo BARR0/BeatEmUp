@@ -45,8 +45,8 @@ public class GameController : MonoBehaviour {
 
 	public static void CreatePlayers(){
 		foreach(GameObject go in controllers.Keys){
-			print (go.name);
-			GameObject clone = Instantiate(go);
+			
+			Instantiate(go);
 			// clone.GetComponent<PlayerMove>().inputAxis = controllers[go];
 		}
 	}

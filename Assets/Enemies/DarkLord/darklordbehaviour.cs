@@ -19,7 +19,6 @@ public class darklordbehaviour : MonoBehaviour {
     private bool dead;
     private bool musicOn;
     private AudioSource source;
-	private SpriteRenderer mySprite;
 
     void Awake()
     {
@@ -28,7 +27,6 @@ public class darklordbehaviour : MonoBehaviour {
 
     void Start()
     {
-		mySprite = transform.GetChild (0).gameObject.GetComponent<SpriteRenderer> ();
         musicOn = false;
         musicDistance = 7;
         enemySprite = transform.GetChild(0);
@@ -140,7 +138,6 @@ public class darklordbehaviour : MonoBehaviour {
     }
 	IEnumerator WhenDestroyed()
 	{
-		mySprite.enabled = false;
 		yield return new WaitForSeconds(6f);
 		SceneManager.LoadScene("Game Over");
 		//Destroy(this.gameObject);

@@ -14,7 +14,7 @@ public class aimer : MonoBehaviour {
 	void Update () {
         if (GameController.players.Count > 0)
         {
-            this.transform.LookAt(target.position);
+			this.transform.LookAt(new Vector3(target.position.x, this.transform.position.y, target.position.z));
         }
         
 	}

@@ -41,7 +41,7 @@ public class EnemyMedium : MonoBehaviour {
     {
 
         AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo(0);
-        Debug.Log(life);
+        
 		if (target == null)
 			return;
         Vector3 movement = (target.position - this.transform.position).normalized * Time.deltaTime * defaultSpeed;

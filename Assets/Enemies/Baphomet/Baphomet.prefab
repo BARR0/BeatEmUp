@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 95073917439745730}
   - component: {fileID: 114941138871176868}
   - component: {fileID: 114899139437537986}
+  - component: {fileID: 114534851597919864}
   m_Layer: 10
   m_Name: Baphomet_0
   m_TagString: 10
@@ -279,6 +280,17 @@ MonoBehaviour:
   anim: {fileID: 95073917439745730}
   hurt: {fileID: 8300000, guid: d063efeda7aa7e64c8fb89feeca9edb4, type: 3}
   contlvl: {fileID: 0}
+--- !u!114 &114534851597919864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1745971694775078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e566dd97a289a543a3c2681e6750c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114899139437537986
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -30,7 +30,7 @@ public class HealthBar : MonoBehaviour {
         }
         if (player == null)
         {
-            Debug.Log(gameObject.name + " was destroyed");
+            //Debug.Log(gameObject.name + " was destroyed");
             Destroy(gameObject);
             return;
         }

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212897509232857578}
   - component: {fileID: 95986726337400378}
   - component: {fileID: 114634632399078658}
+  - component: {fileID: 114234418156423924}
   m_Layer: 0
   m_Name: darklord_0
   m_TagString: Untagged
@@ -226,6 +227,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b9569ef5dcbff04986c46429213e6ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114234418156423924
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1379548378353936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e566dd97a289a543a3c2681e6750c45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114634632399078658
