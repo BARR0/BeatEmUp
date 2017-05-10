@@ -271,7 +271,7 @@ MonoBehaviour:
   XP: 0.2
   anim: {fileID: 95516390699223914}
   defaultSpeed: 1
-  attackDistance: 2
+  attackDistance: 2.2
   hurt: {fileID: 8300000, guid: 4b9ed9489211bcf41856eaef9d261576, type: 3}
 --- !u!135 &135842002559957782
 SphereCollider:
