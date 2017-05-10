@@ -158,11 +158,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf253810009fa6418aefd1d9b9d3915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 10
-  XP: 0
+  life: 100000
+  XP: 1
   anim: {fileID: 95986726337400378}
-  defaultSpeed: 1
-  attackDistance: 10
+  defaultSpeed: 0.7
+  attackDistance: 6
   hurt: {fileID: 0}
 --- !u!114 &114634632399078658
 MonoBehaviour:
