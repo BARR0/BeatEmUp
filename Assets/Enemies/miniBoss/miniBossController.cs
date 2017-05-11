@@ -151,6 +151,7 @@ public class miniBossController : MonoBehaviour {
 		if (life < 1 && !dead)
 		{
 			//cc.enabled = false;
+
 			StartCoroutine(WhenDestroyed());	
 			Destroy (currentBehavior);
 			dead = true;
